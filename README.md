@@ -12,8 +12,6 @@
 
 Straighter is a free and open source, privacy and security-oriented web browser for Android, built on [Mozilla Firefox](https://www.firefox.com/)'s engine (GeckoView).
 
-**Straighter is a fork of [IronFox](https://gitlab.com/ironfox-oss/IronFox)**, which is itself a fork of [Divested Computing Group](https://divested.dev/)'s [Mull Browser](https://web.archive.org/web/20250113132510/https://divestos.org/pages/our_apps#mull). It inherits IronFox's build system, hardening patches and default configuration, and would not exist without the work of those projects and their contributors. See the notices at the bottom of this page.
-
 > [!NOTE]
 > The app is called **Straighter** on your device. In app stores it is listed as **Straighter Browser**.
 
@@ -21,7 +19,7 @@ Straighter is a free and open source, privacy and security-oriented web browser 
 > Straighter is under development and has no public release yet. Installation instructions will be published here with the first release.
 
 > [!IMPORTANT]
-> Because Straighter inherits IronFox's privacy hardening, some sites may behave differently than in a stock browser. IronFox documents these trade-offs on its [Limitations](https://ironfoxoss.org/docs/limitations/) and [FAQ](https://ironfoxoss.org/docs/faq/) pages, which also apply here.
+> Straighter uses a privacy-hardened Firefox configuration, so some sites may behave differently than in a stock browser.
 
 Found a bug or have a suggestion? Please open an issue at [github.com/idinnovate/Straighter/issues](https://github.com/idinnovate/Straighter/issues).
 
@@ -181,6 +179,12 @@ Linter configuration lives in `.shellcheckrc` *(checks)* and `.editorconfig` *(f
 ## Translation
 
 Straighter's translations come from IronFox, which is translated using Weblate. To help with translations, visit [IronFox's Weblate project](https://hosted.weblate.org/engage/ironfox/).
+
+## Acknowledgements
+
+**Thank you to the IronFox team.** Straighter is built on [IronFox](https://gitlab.com/ironfox-oss/IronFox). Its build system, hardening patches and default configuration are the foundation of this project, and Straighter would not exist without the time and work of IronFox's maintainers and contributors. IronFox documents the trade-offs that come with this hardening on its [Limitations](https://ironfoxoss.org/docs/limitations/) and [FAQ](https://ironfoxoss.org/docs/faq/) pages, and they apply to Straighter too.
+
+IronFox is itself a fork of [Mull](https://web.archive.org/web/20250113132510/https://divestos.org/pages/our_apps#mull) by [Divested Computing Group](https://divested.dev/), and both build on [Mozilla Firefox](https://www.firefox.com/). Thank you to those projects, and to everyone whose work they include. The Licensing section below lists the projects whose patches IronFox adapts.
 
 ## Licensing
 
