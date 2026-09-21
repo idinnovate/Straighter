@@ -952,10 +952,10 @@ function prep_fenix() {
 
   # Set-up the app ID, version name and version code
   if [[ "${IRONFOX_RELEASE}" == 1 ]]; then
-    local -r fenix_app_id_suffix='ironfox'
+    local -r fenix_app_id_suffix='straighter'
     local -r fenix_version="${IRONFOX_VERSION}"
   else
-    local -r fenix_app_id_suffix='ironfox.nightly'
+    local -r fenix_app_id_suffix='straighter.nightly'
 
     # Set our version timestamp
     if [[ "${IRONFOX_NIGHTLY_TIMESTAMP_OVERRIDE}" != 'null' ]]; then
@@ -966,13 +966,13 @@ function prep_fenix() {
 
     local -r fenix_version="${IRONFOX_VERSION}.${fenix_version_timestamp}"
   fi
-  local -r fenix_app_id="org.ironfoxoss.${fenix_app_id_suffix}"
+  local -r fenix_app_id="com.s9i.${fenix_app_id_suffix}"
 
   # shellcheck disable=SC2140
   "${IRONFOX_SED}" -i \
-    -e 's|applicationId "org.mozilla"|applicationId "org.ironfoxoss"|g' \
+    -e 's|applicationId "org.mozilla"|applicationId "com.s9i"|g' \
     -e "s|applicationIdSuffix \"".firefox\""|applicationIdSuffix \"".${fenix_app_id_suffix}\""|g" \
-    -e 's|"sharedUserId": "org.mozilla.firefox.sharedID"|"sharedUserId": "org.ironfoxoss.ironfox.sharedID"|g' \
+    -e 's|"sharedUserId": "org.mozilla.firefox.sharedID"|"sharedUserId": "com.s9i.straighter.sharedID"|g' \
     -e "s/Config.releaseVersionName(project)/'${fenix_version}'/" \
     "${IRONFOX_FENIX}/app/build.gradle"
 
