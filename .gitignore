@@ -21,3 +21,6 @@ signing.env
 .straighter-signing/
 .straighter-secrets/
 sb-gapi-key*
+
+# Python bytecode
+__pycache__/

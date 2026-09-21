@@ -1,5 +1,5 @@
 name: Enhancement
-description: Have any new features you want to see or any ideas to make IronFox better? Here's your place ;)
+description: Have any new features you want to see or any ideas to make Straighter better? Here's your place ;)
 title: "[ENHANCEMENT] PLEASE REPLACE THIS TEXT WITH A SUMMARY OF YOUR SUGGESTION..."
 labels: ["enhancement"]
 body:
@@ -8,9 +8,9 @@ body:
     attributes:
       label: Confirmation Checklist
       options:
-        - label: I confirm that this issue occurs on the **latest release** of IronFox. You can check what the latest version is [on the `Releases` page](https://gitlab.com/ironfox-oss/IronFox/-/releases).
+        - label: I confirm that this suggestion applies to the **latest release** of Straighter. You can check what the latest version is [on the `Releases` page](https://github.com/idinnovate/Straighter/releases).
           required: true
-        - label: I confirm that this issue has **NOT** already been reported on [the GitLab issue tracker](https://gitlab.com/ironfox-oss/IronFox/-/issues) **and/or** [the Codeberg issue tracker](https://codeberg.org/ironfox-oss/IronFox/issues).
+        - label: I confirm that this suggestion has **NOT** already been made on [the issue tracker](https://github.com/idinnovate/Straighter/issues).
           required: true
 
   - type: textarea
