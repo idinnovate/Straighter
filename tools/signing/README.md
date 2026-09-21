@@ -50,8 +50,9 @@ as in the first test build. See `signing.env.example`.
 
 **On your Mac:** `source ~/.straighter-signing/signing.env` before running the build.
 
-**On a build machine (a cloud droplet):** the key should not live there. Use
-`tools/build/docker-build.sh`, which mounts it into the build container read-only, checks
+**On a build machine (a cloud droplet):** the key should not live there. The full,
+step-by-step procedure (including the Safe Browsing key) is in `tools/build/README.md`.
+In short, use `tools/build/docker-build.sh`, which mounts it into the build container read-only, checks
 it before the multi-hour compile, and verifies the finished APK against your fingerprint:
 
 1. Copy only what the build needs into a private folder on the build machine:
@@ -67,7 +68,7 @@ it before the multi-hour compile, and verifies the finished APK against your fin
 2. On the build machine, from a fresh clone, run the build inside `tmux`:
 
    ```bash
-   tmux new-session -d -s build 'tools/build/docker-build.sh --release --sign ~/signing'
+   tmux new-session -d -s build 'tools/build/docker-build.sh --release --sign ~/signing --sb-key ~/secrets/sb-gapi-key.txt'
    ```
 
 3. When it finishes, copy the result (in `~/straighter-release/`) back to your Mac.

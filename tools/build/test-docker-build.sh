@@ -24,6 +24,8 @@ FP="AA:BB:CC:DD:EE:FF:00:11:22:33:44:55:66:77:88:99:AA:BB:CC:DD:EE:FF:00:11:22:3
 FP_PLAIN="$(printf '%s' "${FP}" | tr -d ':' | tr 'A-F' 'a-f')"
 SECRET="SENTINEL-PASSWORD-must-not-leak"
 SBSECRET="SENTINEL-API-KEY-must-not-leak"
+echo "${SBSECRET}" > "${T}/sbkey.txt"
+SB=(--sb-key "${T}/sbkey.txt")
 
 cat > "${T}/bin/docker" << 'STUB'
 #!/usr/bin/env bash
@@ -115,7 +117,7 @@ ok "refused" "${rc}" 1
 ok "nothing was built" "$(has 'docker build')" no
 
 echo "T3 signed release, full path"
-newrepo t3; newsign t3; rc=$(drv t3 --release --sign "${S}")
+newrepo t3; newsign t3; rc=$(drv t3 --release --sign "${S}" "${SB[@]}")
 ok "succeeds" "${rc}" 0
 ok "signing folder mounted read-only" "$(has "-v ${S}:/signing:ro")" yes
 ok "release flag is 1" "$(has 'IRONFOX_RELEASE=1')" yes
@@ -127,29 +129,32 @@ ok "password never in driver log or output" "$(cat "${T}"/home_t3/build-docker.l
 ok "key checked before the build" "$(before 'keytool' 'build.sh arm64')" yes
 ok "apksigner checked before the build" "$(before 'apksigner --version' 'build.sh arm64')" yes
 ok "BUILD-INFO records the certificate" "$(grep -c "yes, certificate SHA-256 ${FP_PLAIN}" "${T}"/home_t3/straighter-release/*/BUILD-INFO.txt)" 1
+ok "Safe Browsing key mounted read-only" "$(has 'sbkey.txt:/secrets/sb-gapi-key.txt:ro')" yes
+ok "no prompt answer needed with a key" "$(has "printf 'y")" no
+ok "Safe Browsing key never in a docker call" "$(grep -c "${SBSECRET}" "${STUB_LOG}")" 0
 ok "SHA256SUMS written" "$(wc -l < "${T}"/home_t3/straighter-release/*/SHA256SUMS | tr -d ' ')" 1
 
 echo "T4 wrong key: stops before compiling"
-newrepo t4; newsign t4; export STUB_KEYTOOL_FP="00:11:22"; rc=$(drv t4 --release --sign "${S}")
+newrepo t4; newsign t4; export STUB_KEYTOOL_FP="00:11:22"; rc=$(drv t4 --release --sign "${S}" "${SB[@]}")
 ok "refused" "${rc}" 1
 ok "build.sh never ran" "$(has 'build.sh arm64')" no
 ok "says nothing was built" "$(outmatches t4 'Nothing was built')" 1
 
 echo "T5 debug-signed APK is rejected"
-newrepo t5; newsign t5; export STUB_SIGNER_DN="C=US, O=Android, CN=Android Debug"; rc=$(drv t5 --release --sign "${S}")
+newrepo t5; newsign t5; export STUB_SIGNER_DN="C=US, O=Android, CN=Android Debug"; rc=$(drv t5 --release --sign "${S}" "${SB[@]}")
 ok "refused" "${rc}" 1
 ok "nothing published" "$(ls "${T}/home_t5/straighter-release" 2> /dev/null | wc -l | tr -d ' ')" 0
 ok "names the debug key" "$(outmatches t5 'DEBUG key')" 1
 
 echo "T6 APK signed by a different certificate is rejected"
-newrepo t6; newsign t6; export STUB_APK_FP="$(printf '0%.0s' $(seq 1 64))"; rc=$(drv t6 --release --sign "${S}")
+newrepo t6; newsign t6; export STUB_APK_FP="$(printf '0%.0s' $(seq 1 64))"; rc=$(drv t6 --release --sign "${S}" "${SB[@]}")
 ok "refused" "${rc}" 1
 ok "says different certificate" "$(outmatches t6 'different certificate')" 1
 
 echo "T7 release from a dirty tree"
 newrepo t7; newsign t7; echo change >> "${R}/Dockerfile"
-rc=$(drv t7 --release --sign "${S}"); ok "refused" "${rc}" 1
-rc=$(drv t7 --release --sign "${S}" --allow-dirty); ok "--allow-dirty proceeds" "${rc}" 0
+rc=$(drv t7 --release --sign "${S}" "${SB[@]}"); ok "refused" "${rc}" 1
+rc=$(drv t7 --release --sign "${S}" "${SB[@]}" --allow-dirty); ok "--allow-dirty proceeds" "${rc}" 0
 
 echo "T8 tree that was built before"
 newrepo t8; mkdir "${R}/external"; rc=$(drv t8); ok "refused without --build-only" "${rc}" 1
@@ -159,12 +164,12 @@ ok "get_sources skipped" "$(has 'get_sources.sh')" no
 ok "prebuild skipped" "$(has 'prebuild.sh')" no
 
 echo "T9 missing password file"
-newrepo t9; newsign t9; rm "${S}/keystore.pass"; rc=$(drv t9 --release --sign "${S}")
+newrepo t9; newsign t9; rm "${S}/keystore.pass"; rc=$(drv t9 --release --sign "${S}" "${SB[@]}")
 ok "refused" "${rc}" 1
 ok "nothing was built" "$(has 'docker build')" no
 
 echo "T10 with a Safe Browsing key file"
-newrepo t10; echo "${SBSECRET}" > "${T}/sbkey.txt"; rc=$(drv t10 --sb-key "${T}/sbkey.txt")
+newrepo t10; rc=$(drv t10 "${SB[@]}")
 ok "succeeds" "${rc}" 0
 ok "key file mounted read-only" "$(has 'sbkey.txt:/secrets/sb-gapi-key.txt:ro')" yes
 ok "path passed as an env var" "$(has 'IRONFOX_SB_GAPI_KEY_FILE=/secrets/sb-gapi-key.txt')" yes
@@ -178,10 +183,18 @@ ok "unknown option refused" "$(drv t11 --bogus)" 1
 ok "missing value refused" "$(drv t11 --sign)" 1
 
 echo "T12 apksigner cannot run: stops before compiling"
-newrepo t12; newsign t12; export STUB_APKSIGNER_FAIL=1; rc=$(drv t12 --release --sign "${S}")
+newrepo t12; newsign t12; export STUB_APKSIGNER_FAIL=1; rc=$(drv t12 --release --sign "${S}" "${SB[@]}")
 ok "refused" "${rc}" 1
 ok "build.sh never ran" "$(has 'build.sh arm64')" no
 ok "says nothing was built" "$(outmatches t12 'Nothing was built')" 1
+
+echo "T13 a release must include Safe Browsing, unless opted out"
+newrepo t13; newsign t13
+rc=$(drv t13 --release --sign "${S}"); ok "refused without --sb-key" "${rc}" 1
+ok "says why" "$(outmatches t13 'should include Safe Browsing')" 1
+ok "nothing was built" "$(has 'docker build')" no
+rc=$(drv t13 --release --sign "${S}" --allow-no-safe-browsing); ok "--allow-no-safe-browsing proceeds" "${rc}" 0
+newrepo t13b; rc=$(drv t13b); ok "a nightly needs no key" "${rc}" 0
 
 echo
 echo "${PASS} passed, ${FAIL} failed"

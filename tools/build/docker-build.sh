@@ -16,8 +16,11 @@
 #                        straighter-release.jks, keystore.pass and
 #                        signing-cert-fingerprints.txt. It is mounted READ-ONLY into the
 #                        container for the build only; the key is never copied anywhere.
-#   --sb-key FILE        a Google Safe Browsing API key file. Without one the build has no
-#                        Safe Browsing (phishing/malware warnings).
+#   --sb-key FILE        a Google Safe Browsing API key file (see store-safebrowsing-key.sh).
+#                        Without one the build has no Safe Browsing (phishing/malware
+#                        warnings), so a release requires it.
+#   --allow-no-safe-browsing
+#                        build a release without Safe Browsing (not advised)
 #   --expect-sha256 FP   fail unless the APK's signing certificate has this SHA-256
 #                        (default: read from DIR/signing-cert-fingerprints.txt)
 #   --alias NAME         key alias (default: straighter, or $STRAIGHTER_KEY_ALIAS)
@@ -59,6 +62,7 @@ SB_KEY=""
 EXPECT=""
 BUILD_ONLY=0
 ALLOW_DIRTY=0
+ALLOW_NO_SB=0
 KEEP=0
 
 usage() { sed -n '3,/^set -uo/p' "${BASH_SOURCE[0]}" | sed '$d' | sed 's/^# \{0,1\}//'; }
@@ -82,6 +86,7 @@ while [[ $# -gt 0 ]]; do
     --alias) need "$@"; ALIAS="$2"; shift 2 ;;
     --build-only) BUILD_ONLY=1; shift ;;
     --allow-dirty) ALLOW_DIRTY=1; shift ;;
+    --allow-no-safe-browsing) ALLOW_NO_SB=1; shift ;;
     --keep-container) KEEP=1; shift ;;
     -h | --help) usage; exit 0 ;;
     *) die "unknown option: $1 (try --help)" ;;
@@ -104,6 +109,10 @@ DOCKER=(docker)
 
 if [[ "${RELEASE}" == 1 && -z "${SIGN_DIR}" ]]; then
   die "a release must be signed: add --sign DIR. Without a key the APK is only debug-signed."
+fi
+
+if [[ "${RELEASE}" == 1 && -z "${SB_KEY}" && "${ALLOW_NO_SB}" != 1 ]]; then
+  die "a release should include Safe Browsing (phishing and malware protection): add --sb-key FILE, or --allow-no-safe-browsing to build without it."
 fi
 
 if [[ "${RELEASE}" == 1 && "${ALLOW_DIRTY}" != 1 ]]; then

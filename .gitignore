@@ -19,3 +19,5 @@
 *.pass
 signing.env
 .straighter-signing/
+.straighter-secrets/
+sb-gapi-key*
