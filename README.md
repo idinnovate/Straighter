@@ -18,7 +18,7 @@ Straighter is a free and open source, privacy and security-oriented web browser 
 > The app is called **Straighter** on your device. In app stores it is listed as **Straighter Browser**.
 
 > [!NOTE]
-> Straighter is under development and has no public release yet. Installation instructions and the signing-certificate fingerprint will be published here with the first release.
+> Straighter is under development and has no public release yet. Installation instructions will be published here with the first release.
 
 > [!IMPORTANT]
 > Because Straighter inherits IronFox's privacy hardening, some sites may behave differently than in a stock browser. IronFox documents these trade-offs on its [Limitations](https://ironfoxoss.org/docs/limitations/) and [FAQ](https://ironfoxoss.org/docs/faq/) pages, which also apply here.
@@ -31,7 +31,13 @@ Found a bug or have a suggestion? Please open an issue at [github.com/idinnovate
 
 **Package ID** *(Nightly)*: `com.s9i.straighter.nightly`
 
-**SHA-256 Hash of Signing Certificate**: *to be published with the first release.*
+**SHA-256 Hash of Signing Certificate**:
+
+```text
+F8:25:70:91:28:8F:86:98:73:05:31:D4:E3:8A:DA:B2:FD:FF:9B:B1:D5:65:09:5F:4E:CA:09:86:A6:C5:C7:C0
+```
+
+Releases downloaded directly (for example from GitHub Releases) are signed with this key. Compare it with the output of `apksigner verify --print-certs` (see [`tools/signing/README.md`](tools/signing/README.md)). If Straighter is also offered through Google Play with Play App Signing, installs from Play are signed by Google's app-signing key instead, and its fingerprint will be listed here too.
 
 ## Building
 

@@ -9,3 +9,13 @@
 /overrides.mozconfig
 /scripts/env_local.sh
 /wip/
+
+# Signing keys and their passwords must never be committed (see tools/signing/README.md)
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.pass
+signing.env
+.straighter-signing/
