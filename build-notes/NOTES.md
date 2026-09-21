@@ -35,6 +35,8 @@ the `libxul.so` link and Android (Gradle) packaging. Total droplet uptime by the
 APK was copied off was about 11 hours, mostly idle after the build finished. Destroy
 the droplet as soon as the artifact is safe.
 
+> **Superseded:** `run_docker_build.sh` in this folder was the driver for the first test build. It did not pass any signing variables into the container. Use `tools/build/docker-build.sh` instead: it signs, verifies, and refuses unsafe release builds.
+
 ## How to reproduce
 
 1. Fresh Ubuntu droplet with at least 16 GiB RAM (32 GiB or more is better, see below).

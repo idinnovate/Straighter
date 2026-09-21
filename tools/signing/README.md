@@ -50,13 +50,34 @@ as in the first test build. See `signing.env.example`.
 
 **On your Mac:** `source ~/.straighter-signing/signing.env` before running the build.
 
-**On a build machine (a cloud droplet):** the key should not live there. Copy it in only
-for the build, and delete it afterwards:
+**On a build machine (a cloud droplet):** the key should not live there. Use
+`tools/build/docker-build.sh`, which mounts it into the build container read-only, checks
+it before the multi-hour compile, and verifies the finished APK against your fingerprint:
 
-1. Copy the keystore and password file to a private folder on the build machine, for
-   example `~/signing` (mode 700), and point the four variables at those paths.
-2. Run the build.
-3. Delete the copies when the signed APK has been downloaded, and destroy the machine.
+1. Copy only what the build needs into a private folder on the build machine:
+
+   ```bash
+   ssh builder@HOST 'mkdir -p -m 700 ~/signing'
+   ```
+
+   ```bash
+   scp ~/.straighter-signing/{straighter-release.jks,keystore.pass,signing-cert-fingerprints.txt} builder@HOST:signing/
+   ```
+
+2. On the build machine, from a fresh clone, run the build inside `tmux`:
+
+   ```bash
+   tmux new-session -d -s build 'tools/build/docker-build.sh --release --sign ~/signing'
+   ```
+
+3. When it finishes, copy the result (in `~/straighter-release/`) back to your Mac.
+4. Delete `~/signing` from the build machine, then destroy the machine.
+
+The driver refuses to build a release that is unsigned or comes from a tree with
+uncommitted changes, stops before compiling if the key does not open or is not the
+expected one, and fails if the finished APK is debug-signed or signed by another
+certificate. Run it with `--help` for the options, including `--sb-key` for a Google
+Safe Browsing key.
 
 Never put the key or its password in the repository, in CI logs, or in a chat.
 
