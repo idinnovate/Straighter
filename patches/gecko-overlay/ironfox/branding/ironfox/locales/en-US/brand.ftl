@@ -1,6 +1,6 @@
--brand-full-name = IronFox
--brand-product-name = IronFox
--brand-short-name = IronFox
--brand-shortcut-name = IronFox
--brand-shorter-name = IronFox
--vendor-short-name = IronFox OSS
+-brand-full-name = Straighter
+-brand-product-name = Straighter
+-brand-short-name = Straighter
+-brand-shortcut-name = Straighter
+-brand-shorter-name = Straighter
+-vendor-short-name = Straighter

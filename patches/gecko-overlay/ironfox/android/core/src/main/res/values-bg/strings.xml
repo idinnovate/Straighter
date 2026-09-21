@@ -2,7 +2,7 @@
 <resources>
     <string name="restart_required_summary">Промяната на тази настройка ще рестартира браузъра ви</string>
     <string name="unsupported_summary">Тази настройка НЕ е препоръчана или поддържана. Продължи с предпазливост.</string>
-    <string name="if_preferences">IronFox настройки</string>
+    <string name="if_preferences">Straighter настройки</string>
     <string name="if_preferences_misc">Разни</string>
     <string name="if_preferences_privacy">Поверителност</string>
     <string name="if_preferences_privacy_security">Поверителност и сигурност</string>
@@ -49,14 +49,14 @@
     <string name="preference_fpp_overrides_ironfox_webgl_enabled">Активиране на WebGL презаписвания от IronFox</string>
     <string name="preference_fpp_overrides_ironfox_webgl_summary">Когато WebGL е деактивиран, WebGL се активира отново по подразбиране за определени уебсайтове, за да се намали прекъсването - Промяната на тази настройка ще рестартира браузъра ви</string>
     <string name="preference_webrtc_enabled">Активиране на WebRTC</string>
-    <string name="extension_failed_to_install_xpinstall_disabled_error">Инсталирането на добавки в момента е деактивирано. Ако желаете, за сметка на сигурността, можете да го активирате, като отидете в Настройки -&gt; IronFox -&gt; Настройки на IronFox -&gt; Защита -&gt; Разрешаване на инсталирането на добавки.</string>
+    <string name="extension_failed_to_install_xpinstall_disabled_error">Инсталирането на добавки в момента е деактивирано. Ако желаете, за сметка на сигурността, можете да го активирате, като отидете в Настройки -&gt; Straighter -&gt; Настройки на Straighter -&gt; Защита -&gt; Разрешаване на инсталирането на добавки.</string>
     <string name="preference_xpinstall_enabled">Разрешаване на инсталирането на добавки</string>
     <string name="ironfox_onboarding_state_installing_ublock">Инсталиране на uBlock Origin…</string>
     <string name="ironfox_onboarding_state_installing_ublock_error">Възникна грешка при инсталирането на uBlock Origin: %1$s</string>
     <string name="ironfox_retry">Опитай отново</string>
     <string name="preference_webgl_disabled">Деактивиране на WebGL</string>
     <string name="preference_media_autoplay_title">Автоматично възпроизвеждане на медийно съдържание</string>
-    <string name="preference_media_autoplay_description">Контролирайте как IronFox блокира автоматичното възпроизвеждане на медийни файлове.</string>
+    <string name="preference_media_autoplay_description">Контролирайте как Straighter блокира автоматичното възпроизвеждане на медийни файлове.</string>
     <string name="preference_autoplay_policy_sticky">Лепкаво</string>
     <string name="preference_autoplay_policy_transient">Преходно (По подразбиране)</string>
     <string name="preference_autoplay_policy_click_to_play">Кликни за възпроизвеждане</string>

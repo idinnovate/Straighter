@@ -2,7 +2,7 @@
 <resources>
     <string name="restart_required_summary">Cambiando questa impostazione il browser si riavvierà</string>
     <string name="unsupported_summary">Questa impostazione è sconsigliata o non supportata. Procedere con cautela.</string>
-    <string name="if_preferences">Impostazioni di IronFox</string>
+    <string name="if_preferences">Impostazioni di Straighter</string>
     <string name="if_preferences_misc">Altre impostazioni</string>
     <string name="if_preferences_privacy">Privacy</string>
     <string name="if_preferences_privacy_security">Privacy e sicurezza</string>
@@ -22,7 +22,7 @@
     <string name="preference_jit_trusted_principals_enabled">AbilitaJavaScript Just-in-time Compilation (JIT) per le estensioni</string>
     <string name="preference_jit_trusted_principals_enabled_summary">Quando JIT è disabilitato, riabilita JIT per le estensioni - Cambiando questa impostazione il tuo browser si riavvierà</string>
     <string name="preference_media_autoplay_title">Autoriproduzione di file multimediali</string>
-    <string name="preference_media_autoplay_description">Controlla come IronFox blocca l\'auto-riproduzione di file multimediali.</string>
+    <string name="preference_media_autoplay_description">Controlla come Straighter blocca l\'auto-riproduzione di file multimediali.</string>
     <string name="preference_pdfjs_disabled">Aprire file PDF esternamente</string>
     <string name="preference_website_appearance_title">Aspetto del sito web preferito</string>
     <string name="preference_website_appearance_description">Alcuni siti web adattano il loro schema di colori sulla base delle tue preferenze. Scegli quale schema di colori ti piacerebbe usare per quei siti. Nota che le opzioni al di fuori di Chiaro possono agevolare il fingerprinting perché il tuo browser appare come più unico.</string>
@@ -44,7 +44,7 @@
     <string name="preference_autoplay_policy_click_to_play">Clicca per riprodurre</string>
     <string name="preference_webrtc_enabled">Abilita WebRTC</string>
     <string name="preference_xpinstall_enabled">Abilita l\'installazione di add-ons</string>
-    <string name="extension_failed_to_install_xpinstall_disabled_error">L\'installazione di add-ons è attualmente disabilitata. Se lo si desidera, al costo della sicurezza, puoi abilitarlo andando su Impostazioni -&gt; IronFox -&gt; Impostazioni di IronFox -&gt; Sicurezza -&gt; Abilita l\'installazione di add-ons.</string>
+    <string name="extension_failed_to_install_xpinstall_disabled_error">L\'installazione di add-ons è attualmente disabilitata. Se lo si desidera, al costo della sicurezza, puoi abilitarlo andando su Impostazioni -&gt; Straighter -&gt; Impostazioni di Straighter -&gt; Sicurezza -&gt; Abilita l\'installazione di add-ons.</string>
     <string name="preference_always_use_private_browsing">Usa sempre la navigazione anonima</string>
     <string name="preference_referer_policy">Politica di riferimento multi-origine</string>
     <string name="preference_referer_policy_summary">Configurare il comportamento dei referenti cross-origin</string>

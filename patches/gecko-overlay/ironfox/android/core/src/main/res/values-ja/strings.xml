@@ -2,7 +2,7 @@
 <resources>
     <string name="restart_required_summary">この設定を変更するとブラウザが再起動されます</string>
     <string name="unsupported_summary">この設定は非推奨かつサポート対象外です。変更には十分注意してください。</string>
-    <string name="if_preferences">IronFox 設定</string>
+    <string name="if_preferences">Straighter 設定</string>
     <string name="if_preferences_misc">その他</string>
     <string name="if_preferences_privacy">プライバシー</string>
     <string name="if_preferences_privacy_security">プライバシーとセキュリティ</string>
@@ -28,7 +28,7 @@
     <string name="preference_jit_trusted_principals_enabled">拡張機能の JavaScript JIT コンパイルを有効化</string>
     <string name="preference_jit_trusted_principals_enabled_summary">JIT の無効化時も、拡張機能では JIT を有効に保ちます。設定の変更にはブラウザの再起動が必要です</string>
     <string name="preference_media_autoplay_title">音声・動画の自動再生</string>
-    <string name="preference_media_autoplay_description">IronFox が音声・動画の自動再生をブロックする動作を制御します。</string>
+    <string name="preference_media_autoplay_description">Straighter が音声・動画の自動再生をブロックする動作を制御します。</string>
     <string name="preference_autoplay_policy_sticky">ページ操作後は常に自動再生する</string>
     <string name="preference_autoplay_policy_transient">ページ操作後は一定期間のみ自動再生する（デフォルト）</string>
     <string name="preference_autoplay_policy_click_to_play">クリックして再生</string>
@@ -57,7 +57,7 @@
     <string name="preference_fpp_overrides_ironfox_webgl_enabled">IronFox による WebGL設定の上書きを有効化</string>
     <string name="preference_fpp_overrides_ironfox_webgl_summary">WebGL が無効な場合でも、サイトの不具合を減らすため一部のウェブサイトにおいてデフォルトで WebGL を有効化します。設定の変更にはブラウザの再起動が必要です</string>
     <string name="preference_webrtc_enabled">WebRTCを有効化</string>
-    <string name="extension_failed_to_install_xpinstall_disabled_error">拡張機能のインストールは現在無効になっています。セキュリティレベルは低下しますが、利用したい場合は「設定」-&gt;「IronFox」-&gt;「IronFox の設定」-&gt;「セキュリティ」-&gt;「拡張機能のインストールを許可」で有効化できます。</string>
+    <string name="extension_failed_to_install_xpinstall_disabled_error">拡張機能のインストールは現在無効になっています。セキュリティレベルは低下しますが、利用したい場合は「設定」-&gt;「Straighter」-&gt;「Straighter の設定」-&gt;「セキュリティ」-&gt;「拡張機能のインストールを許可」で有効化できます。</string>
     <string name="preference_xpinstall_enabled">拡張機能のインストールを許可</string>
     <string name="ironfox_onboarding_state_installing_ublock">uBlock Origin をインストール中…</string>
     <string name="ironfox_onboarding_state_installing_ublock_error">uBlock Origin をインストール中にエラーが発生しました: %1$s</string>

@@ -2,7 +2,7 @@
 <resources>
     <string name="restart_required_summary">Изменение этой настройки приведет к перезапуску браузера</string>
     <string name="unsupported_summary">Этот параметр НЕ рекомендуется или не поддерживается. Будьте осторожны.</string>
-    <string name="if_preferences">Настройки IronFox</string>
+    <string name="if_preferences">Настройки Straighter</string>
     <string name="if_preferences_misc">Разное</string>
     <string name="if_preferences_privacy">Конфиденциальность</string>
     <string name="if_preferences_privacy_security">Конфиденциальность и безопасность</string>
@@ -41,7 +41,7 @@
     <string name="ironfox_onboarding_state_installing_ublock_error">При установке uBlock Origin произошла ошибка: %1$s</string>
     <string name="ironfox_retry">Попробовать снова</string>
     <string name="preference_translations_enabled">Включить Firefox Translations</string>
-    <string name="extension_failed_to_install_xpinstall_disabled_error">Установка расширений отключена. При желании, в ущерб безопасности, Вы можете включить её, перейдя в Настройки -&gt; IronFox -&gt; Настройки IronFox -&gt; Безопасность и выбрав пункт \"Разрешить установку расширений\".</string>
+    <string name="extension_failed_to_install_xpinstall_disabled_error">Установка расширений отключена. При желании, в ущерб безопасности, Вы можете включить её, перейдя в Настройки -&gt; Straighter -&gt; Настройки Straighter -&gt; Безопасность и выбрав пункт \"Разрешить установку расширений\".</string>
     <string name="preference_fpp_overrides_ironfox_enabled">Включить переопределения защиты от фингерпринтинга, созданные IronFox</string>
     <string name="preference_fpp_overrides_ironfox_summary">По умолчанию смягчает защиту от фингерпринтинга на некоторых сайтах, чтобы избежать проблем с их работой, используя список исключений от IronFox - Изменение этого параметра перезапустит браузер</string>
     <string name="preference_fpp_overrides_mozilla_enabled">Включить переопределения защиты от фингерпринтинга, созданные Mozilla</string>
@@ -56,7 +56,7 @@
     <string name="preference_fpp_overrides_ironfox_webgl_summary">По умолчанию включает WebGL на некоторых сайтах, даже если он отключён для всего браузера, чтобы избежать проблем с их работой - Изменение этой настройки перезапустит браузер</string>
     <string name="preference_webgl_disabled">Отключить WebGL</string>
     <string name="preference_media_autoplay_title">Автовоспроизведение медиа</string>
-    <string name="preference_media_autoplay_description">Настройте, как IronFox будет блокировать автовоспроизведение медиа.</string>
+    <string name="preference_media_autoplay_description">Настройте, как Straighter будет блокировать автовоспроизведение медиа.</string>
     <string name="preference_autoplay_policy_sticky">Запоминать выбор</string>
     <string name="preference_autoplay_policy_transient">Не запоминать (по умолчанию)</string>
     <string name="preference_autoplay_policy_click_to_play">Воспроизведение по клику</string>

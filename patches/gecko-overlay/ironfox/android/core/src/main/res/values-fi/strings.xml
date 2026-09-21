@@ -2,7 +2,7 @@
 <resources>
     <string name="restart_required_summary">Selain käynnistyy uudelleen kun muutat tätä asetusta</string>
     <string name="unsupported_summary">Tätä asetusta ei suositella tai tueta. Käyttö omalla vastuulla.</string>
-    <string name="if_preferences">IronFox asetukset</string>
+    <string name="if_preferences">Straighter asetukset</string>
     <string name="if_preferences_misc">Sekalainen</string>
     <string name="if_preferences_privacy">Yksityisyys</string>
     <string name="if_preferences_privacy_security">Yksityisyys ja turvallisuus</string>
@@ -48,7 +48,7 @@
     <string name="preference_fpp_overrides_mozilla_summary">Keventää sormenjälkitunnistuksen estoja tietyiltä verkkosivuilta oletuksena vähentääkseen sivujen rikkoutumista, käyttäen Mozillan listaa - Tämän asetuksen muuttaminen käynnistää selaimen uudelleen</string>
     <string name="preference_jit_trusted_principals_enabled">Salli JavaScript Just-in-time Compilation (JIT) laajennuksille</string>
     <string name="preference_media_autoplay_title">Median automaattinen toisto</string>
-    <string name="preference_media_autoplay_description">Määritä kuinka IronFox estää median automaattisen toiston.</string>
+    <string name="preference_media_autoplay_description">Määritä kuinka Straighter estää median automaattisen toiston.</string>
     <string name="preference_autoplay_policy_sticky">Pysyvä</string>
     <string name="preference_autoplay_policy_click_to_play">Click - to - play</string>
     <string name="spoof_timezone">Huijaa aikavyöhykkeeksi UTC-0</string>
@@ -61,5 +61,5 @@
     <string name="preference_autoplay_policy_transient">Katoava (Oletus)</string>
     <string name="preference_fpp_overrides_ironfox_timezone_summary">Poista aikavyöhykenaamiointi tietyiltä verkkosivuilta oletuksena vähentääksesi verkkosivujen rikkoutumista - Tämän asetuksen muuttaminen käynnistää selaimen uudelleen</string>
     <string name="preference_fpp_overrides_ironfox_webgl_summary">Kun WebGL on pois käytöstä, uudelleenkäynnistää WebGL:n tietyille verkkosivuille oletuksena vähentääkseen sivujen rikkoutumista - Tämän asetuksen muuttaminen käynnistää selaimen uudelleen</string>
-    <string name="extension_failed_to_install_xpinstall_disabled_error">Lisäosien asentaminen on toistaiseksi pois käytöstä. Jos halutaan, turvallisuuden kustannuksella, voit sallia laajennukset siirtymällä: Asetukset -&gt; IronFox -&gt; IronFoxin asetukset -&gt; Turvallisuus -&gt; Salli lisäosien asentaminen.</string>
+    <string name="extension_failed_to_install_xpinstall_disabled_error">Lisäosien asentaminen on toistaiseksi pois käytöstä. Jos halutaan, turvallisuuden kustannuksella, voit sallia laajennukset siirtymällä: Asetukset -&gt; Straighter -&gt; Straighterin asetukset -&gt; Turvallisuus -&gt; Salli lisäosien asentaminen.</string>
 </resources>
