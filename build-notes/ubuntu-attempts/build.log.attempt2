@@ -1,0 +1,26 @@
+=== [2026-09-20T15:33:14Z] START build_arm64 ===
+[31mERROR: Environment variable has not been specified: 'IRONFOX_SB_GAPI_KEY_FILE'![0m
+[31mIRONFOX_SB_GAPI_KEY_FILE environment variable has not been specified! Safe Browsing will not be supported in this build.[0m
+If this is unexpected, please ensure that IRONFOX_SB_GAPI_KEY_FILE is set to a valid file path.
+
+[31mPreparing your build environment...[0m
+[31mSetting build environment variables...[0m
+[32mSUCCESS: Set build environment variables[0m
+[31mPreparing Gecko...[0m
+[32mSUCCESS: Prepared Gecko[0m
+[31mPreparing Application Services...[0m
+[32mSUCCESS: Prepared Application Services[0m
+[31mPreparing Fenix...[0m
+[32mSUCCESS: Prepared Fenix[0m
+[31mPreparing Glean...[0m
+[32mSUCCESS: Prepared Glean[0m
+[31mPreparing UnifiedPush-AC...[0m
+[32mSUCCESS: Prepared UnifiedPush-AC[0m
+[32mSUCCESS: Prepared build environment[0m
+[31mBuilding Phoenix...[0m
+~/Straighter/external/phoenix ~/Straighter
+~/Straighter/external/phoenix ~/Straighter/external/phoenix
+[31mPath already exists: '/home/builder/Straighter/external/phoenix/outputs/android'![0m
+[31mContinuing WILL remove this file/directory.[0m
+
+=== [2026-09-20T15:33:17Z] END build_arm64 (exit 1) ===

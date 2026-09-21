@@ -1,0 +1,12 @@
+=== [2026-09-20T18:04:29Z] START image ===
+=== [2026-09-20T18:07:52Z] END image (exit 0) ===
+=== [2026-09-20T18:07:52Z] START container ===
+=== [2026-09-20T18:07:52Z] END container (exit 0) ===
+=== [2026-09-20T18:07:52Z] START git_trust ===
+=== [2026-09-20T18:07:52Z] END git_trust (exit 0) ===
+=== [2026-09-20T18:07:52Z] START get_sources ===
+=== [2026-09-20T18:16:40Z] END get_sources (exit 0) ===
+=== [2026-09-20T18:16:40Z] START prebuild ===
+=== [2026-09-20T18:17:35Z] END prebuild (exit 0) ===
+=== [2026-09-20T18:17:35Z] START build_arm64 ===
+=== [2026-09-20T22:39:22Z] END build_arm64 (exit 0) ===

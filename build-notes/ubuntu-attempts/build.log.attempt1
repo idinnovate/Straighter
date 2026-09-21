@@ -1,0 +1,539 @@
+=== [2026-09-20T15:23:57Z] START build_arm64 ===
+[31mERROR: Environment variable has not been specified: 'IRONFOX_SB_GAPI_KEY_FILE'![0m
+[31mIRONFOX_SB_GAPI_KEY_FILE environment variable has not been specified! Safe Browsing will not be supported in this build.[0m
+If this is unexpected, please ensure that IRONFOX_SB_GAPI_KEY_FILE is set to a valid file path.
+
+[31mPreparing your build environment...[0m
+[31mSetting build environment variables...[0m
+[32mSUCCESS: Set build environment variables[0m
+[31mPreparing Gecko...[0m
+[32mSUCCESS: Prepared Gecko[0m
+[31mPreparing Application Services...[0m
+[32mSUCCESS: Prepared Application Services[0m
+[31mPreparing Fenix...[0m
+[32mSUCCESS: Prepared Fenix[0m
+[31mPreparing Glean...[0m
+[32mSUCCESS: Prepared Glean[0m
+[31mPreparing UnifiedPush-AC...[0m
+[32mSUCCESS: Prepared UnifiedPush-AC[0m
+[32mSUCCESS: Prepared build environment[0m
+[31mBuilding Phoenix...[0m
+~/Straighter/external/phoenix ~/Straighter
+Writing '/home/builder/Straighter/external/phoenix/scripts/env_local.sh'...
+~/Straighter/external/phoenix ~/Straighter/external/phoenix
+~/Straighter/external/phoenix
+~/Straighter
+[32mSUCCESS: Built Phoenix[0m
+[31mBuilding microG...[0m
+~/Straighter/external/gmscore ~/Straighter
+CACHEDIR set to /home/builder/Straighter/build/gradle/cache
+Update checksum from gradle-transparency-log
+Found 8.13 via distributionUrl
+Downloading missing gradle version 8.13
+Using cache directory /home/builder/Straighter/build/gradle/cache
+Running /home/builder/Straighter/build/gradle/cache/versions/8.13/bin/gradle -Dhttps.protocols=TLSv1.3,TLSv1.2 -Dmaven.repo.local=/home/builder/Straighter/build/.m2/repository -Dorg.gradle.caching=false -Dorg.gradle.configuration-cache=false -Dorg.gradle.configureondemand=true -Dorg.gradle.console=verbose -Dorg.gradle.daemon=false -Dorg.gradle.debug=false -Dorg.gradle.java.installations.auto-detect=false -Dorg.gradle.java.installations.auto-download=false --no-build-cache --no-configuration-cache --no-daemon -Dorg.gradle.java.home=/home/builder/Straighter/external/jdk-21 -Dorg.gradle.java.installations.paths=/home/builder/Straighter/external/jdk-25 -x javaDocReleaseGeneration :play-services-base:publishToMavenLocal :play-services-basement:publishToMavenLocal :play-services-fido:publishToMavenLocal :play-services-tasks:publishToMavenLocal
+NOTE: Picked up JDK_JAVA_OPTIONS: -Dhttps.protocols=TLSv1.3,TLSv1.2
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.protocols=TLSv1.3,TLSv1.2
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/home/builder/Straighter/build/gradle/cache/versions/8.13/lib/native-platform-0.22-milestone-28.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+
+Welcome to Gradle 8.13!
+
+Here are the highlights of this release:
+ - Daemon JVM auto-provisioning
+ - Enhancements for Scala plugin and JUnit testing
+ - Improvements for build authors and plugin developers
+
+For more details see https://docs.gradle.org/8.13/release-notes.html
+
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.13/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+
+
+[2A[1B[1m> Starting Daemon[m[17D[1B[1A> IDLE[0K[6D[1B[2ADaemon will be stopped at the end of the build 
+[1B[0K
+[2A[0K[1B> IDLE[6D[1B[2AConfiguration on demand is an incubating feature.
+[1B[0K
+[2A[1m<[0;1m-------------> 0% INITIALIZING [71ms][m[38D[1B> IDLE[6D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [173ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [271ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [371ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [471ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [571ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [671ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [771ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [871ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [971ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [1s][m[0K[36D[2B[1A[1m> Evaluating settings[m[21D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [2s][m[36D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [3s][m[36D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [4s][m[36D[2B[2A[1m<[0;1m-------------> 0% CONFIGURING [4s][m[0K[35D[1B[1m> Loading projects[m[0K[18D[1B[1A> IDLE[0K[6D[1B[1A[1m> root project[m[14D[1B[2A[1m<[0;1m-------------> 0% CONFIGURING [5s][m[35D[2B[2A[1m<[0;1m-------------> 0% CONFIGURING [6s][m[35D[2B[1A[1m> root project > Resolve dependencies of classpath[m[50D[1B
+
+
+[4A[1m> root project > Resolve dependencies of classpath > gradle-8.13.2.pom[m[70D[1B[1m> root project > Resolve dependencies of classpath > wire-gradle-plugin-6.2.0.p[m[79D[1B[1m> root project > Resolve dependencies of classpath > kotlin-gradle-plugin-1.9.2[m[79D[1B[1m> root project > Resolve dependencies of classpath > compose-compiler-gradle-pl[m[79D[1B[5A[1m<[0;1m-------------> 0% CONFIGURING [7s][m[35D[5B[4A> IDLE[0K[6D[1B[1m> root project > Resolve dependencies of classpath > compose-compiler-gradle-pl[m[79D[1B[1m> root project > Resolve dependencies of classpath > gradle-8.13.2.pom[m[0K[70D[1B> IDLE[0K[6D[1B[3A[1m> root project > Resolve dependencies of classpath > wire-gradle-plugin-6.2.0.m[m[79D[1B[1m> root project > Resolve dependencies of classpath > kotlin-gradle-plugins-bom-[m[79D[2B[3A> IDLE[0K[6D[1B[1m> root project > Resolve dependencies of classpath[m[0K[50D[2B[2A[1m> root project > Resolve dependencies of classpath > kotlin-gradle-plugin-1.9.2[m[79D[2B[4A[1m> root project > Resolve dependencies of classpath > sdklib-31.13.2.pom[m[71D[1B[1m> root project > Resolve dependencies of classpath > gradle-settings-api-8.13.2[m[79D[1B[1m> root project > Resolve dependencies of classpath > sdk-common-31.13.2.pom[m[0K[75D[1B[1m> root project > Resolve dependencies of classpath > repository-31.13.2.pom[m[75D[1B[5A[1m<[0;1m-------------> 0% CONFIGURING [8s][m[35D[2B[1m> root project > Resolve dependencies of classpath > ddmlib-31.13.2.pom[m[0K[71D[3B[3A[1m> root project > Resolve dependencies of classpath > databinding-common-8.13.2.[m[79D[2B[1m> root project > Resolve dependencies of classpath > databinding-compiler-commo[m[79D[1B[4A[1m> root project > Resolve dependencies of classpath > android-test-plugin-host-e[m[79D[1B[1m> root project > Resolve dependencies of classpath > android-test-plugin-host-l[m[79D[1B[1m> root project > Resolve dependencies of classpath > android-test-plugin-host-c[m[79D[1B[1m> root project > Resolve dependencies of classpath > builder-test-api-8.13.2.mo[m[79D[1B[2A[1m> root project > Resolve dependencies of classpath > asm-9.8.pom[m[0K[64D[1B[1m> root project > Resolve dependencies of classpath > commons-io-2.16.1.pom[m[0K[74D[1B[4A> IDLE[0K[6D[1B[1m> root project > Resolve dependencies of classpath > jaxb-runtime-2.3.2.pom[m[0K[75D[1B[1m> root project > Resolve dependencies of classpath > apache-31.pom[m[66D[1B> IDLE[0K[6D[1B[4A[1m> root project > Resolve dependencies of classpath > jaxb-parent-2.3.2.pom[m[74D[1B[1m> root project > Resolve dependencies of classpath > jetifier-core-1.0.0-beta10[m[79D[1B[1m> root project > Resolve dependencies of classpath > oss-parent-7.pom > 1.9 KiB[m[79D[2B[4A[1m> root project > Resolve dependencies of classpath > gson-parent-2.11.0.pom[m[75D[1B[1m> root project > Resolve dependencies of classpath > grpc-protobuf-1.69.1.pom[m[0K[77D[1B[1m> root project > Resolve dependencies of classpath > protobuf-bom-3.25.5.pom[m[0K[76D[1B[1m> root project > Resolve dependencies of classpath > jetifier-processor-1.0.0-b[m[79D[1B[4A[1m> root project > Resolve dependencies of classpath > builder-model-8.13.2.pom[m[77D[1B[1m> root project > Resolve dependencies of classpath > gradle-api-8.13.2.pom[m[0K[74D[1B> IDLE[0K[6D[1B[1m> root project > Resolve dependencies of classpath > builder-8.13.2.pom[m[0K[71D[1B[4A[1m> root project > Resolve dependencies of classpath > builder-model-8.13.2.modul[m[79D[3B> IDLE[0K[6D[1B[4A> IDLE[0K[6D[1B[1m> root project > Resolve dependencies of classpath > gradle-api-8.13.2.module[m[77D[3B[5A[1m<[0;1m-------------> 0% CONFIGURING [9s][m[35D[1B[1m> root project > Resolve dependencies of classpath > kotlin-gradle-plugin-model[m[79D[1B[1m> root project > Resolve dependencies of classpath > kotlin-gradle-plugin-api-1[m[79D[1B[1m> root project > Resolve dependencies of classpath > kotlin-gradle-plugin-idea-[m[79D[1B[1m> root project > Resolve dependencies of classpath > kotlin-compiler-embeddable[m[79D[1B[4A> IDLE[0K[6D[1B> IDLE[0K[6D[1B[1m> root project > Resolve dependencies of classpath[m[0K[50D[1B> IDLE[0K[6D[1B[2A[1m> root project > Resolve dependencies of classpath > kotlin-gradle-plugin-2.2.2[m[79D[2B[2A[1m> root project > Resolve dependencies of classpath > kotlin-gradle-plugins-bom-[m[79D[2B[2A[1m> root project > Resolve dependencies of classpath > kotlin-gradle-plugin-2.2.2[m[79D[2B[3A[1m> root project > Resolve dependencies of classpath > wire-kotlin-generator-6.2.[m[79D[1B[1m> root project > Resolve dependencies of classpath > wire-compiler-6.2.0.module[m[79D[2B[3A[1m> root project > Resolve dependencies of classpath > gradle-common-api-8.13.2.p[m[79D[1B> IDLE[0K[6D[2B[4A[1m> root project > Resolve dependencies of classpath > commons-compress-1.21.pom[m[78D[1B[1m> root project > Resolve dependencies of classpath > common-31.13.2.pom[m[0K[71D[1B[1m> root project > Resolve dependencies of classpath > guava-33.3.1-jre.pom[m[73D[1B[1m> root project > Resolve dependencies of classpath > javax.inject-1.pom[m[71D[1B[4A> IDLE[0K[6D[1B[1m> root project > Resolve dependencies of classpath > apache-23.pom[m[0K[66D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[5A[1m<[0;1m-------------> 0% CONFIGURING [10s][m[36D[2B[1m> root project > Resolve dependencies of classpath > httpcore-4.4.16.pom[m[72D[1B[1m> root project > Resolve dependencies of classpath > dvlib-31.13.2.pom[m[70D[2B[3A[1m> root project > Resolve dependencies of classpath > httpcomponents-parent-11.p[m[79D[3B[3A> IDLE[0K[6D[3B[4A[1m> root project > Resolve dependencies of classpath > kotlinx-coroutines-core-1.[m[79D[1B[1m> root project > Resolve dependencies of classpath > javax.activation-1.2.0.pom[m[79D[1B[1m> root project > Resolve dependencies of classpath > jimfs-1.1.pom[m[0K[66D[2B[3A[1m> root project > Resolve dependencies of classpath > all-1.2.0.pom[m[0K[66D[1B> IDLE[0K[6D[2B[4A[1m> root project > Resolve dependencies of classpath[m[0K[50D[1B> IDLE[0K[6D[3B[4A[1m> root project > Resolve dependencies of classpath > annotations-31.13.2.pom[m[76D[4B[4A[1m> root project > Resolve dependencies of classpath > jna-platform-5.6.0.pom[m[0K[75D[1B[1m> root project > Resolve dependencies of classpath > protos-31.13.2.pom[m[71D[3B[4A> IDLE[0K[6D[4B[3A[1m> root project > Resolve dependencies of classpath[m[0K[50D[3B[5A[1m<[0;1m-------------> 0% CONFIGURING [11s][m[36D[2B[1m> root project > Resolve dependencies of classpath > javax.annotation-api-1.3.2[m[79D[3B[3A[1m> root project > Resolve dependencies of classpath > asm-tree-9.8.pom[m[0K[69D[3B[4A[1m> root project > Resolve dependencies of classpath > FastInfoset-1.2.16.pom[m[75D[1B[1m> root project > Resolve dependencies of classpath > istack-commons-runtime-3.0[m[79D[1B[1m> root project > Resolve dependencies of classpath > jakarta.activation-api-1.2[m[79D[2B[4A> IDLE[0K[6D[1B[1m> root project > Resolve dependencies of classpath > project-1.0.2.pom[m[0K[70D[1B> IDLE[0K[6D[2B[4A[1m> root project > Resolve dependencies of classpath > auto-value-parent-1.6.2.po[m[79D[1B[1m> root project > Resolve dependencies of classpath > slf4j-api-1.7.30.pom[m[73D[3B[4A[1m> root project > Resolve dependencies of classpath > jdom2-2.0.6.pom[m[0K[68D[1B> IDLE[0K[6D[3B[4A[1m> root project > Resolve dependencies of classpath > error_prone_parent-2.18.0.[m[79D[4B[4A[1m> root project > Resolve dependencies of classpath > oss-parent-9.pom[m[0K[69D[4B[4A[1m> root project > Resolve dependencies of classpath > error_prone_annotations-2.[m[79D[4B[4A[1m> root project > Resolve dependencies of classpath > annotations-4.1.1.4.pom[m[0K[76D[1B[1m> root project > Resolve dependencies of classpath > perfmark-api-0.27.0.pom[m[76D[1B[1m> root project > Resolve dependencies of classpath > grpc-api-1.69.1.pom[m[72D[1B[1m> root project > Resolve dependencies of classpath > animal-sniffer-annotations[m[79D[1B[5A[1m<[0;1m-------------> 0% CONFIGURING [12s][m[36D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[1m> root project > Resolve dependencies of classpath > animal-sniffer-parent-1.24[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath > mojo-parent-84.pom[m[0K[71D[1B[4A[1m> root project > Resolve dependencies of classpath > netty-transport-native-uni[m[79D[1B[1m> root project > Resolve dependencies of classpath > netty-handler-proxy-4.1.11[m[79D[1B[1m> root project > Resolve dependencies of classpath > grpc-util-1.69.1.pom[m[73D[1B[1m> root project > Resolve dependencies of classpath > netty-codec-http2-4.1.110.[m[79D[1B[4A> IDLE[0K[6D[1B[1m> root project > Resolve dependencies of classpath > proto-google-common-protos[m[79D[1B> IDLE[0K[6D[1B[1m> root project > Resolve dependencies of classpath > grpc-protobuf-lite-1.69.1.[m[79D[1B[3A> IDLE[0K[6D[2B[1m> root project > Resolve dependencies of classpath > checker-qual-2.5.8.pom[m[0K[75D[1B[4A[1m> root project > Resolve dependencies of classpath > apksig-8.13.2.pom[m[70D[1B[1m> root project > Resolve dependencies of classpath > manifest-merger-31.13.2.po[m[79D[1B[1m> root project > Resolve dependencies of classpath > signflinger-8.13.2.pom[m[75D[1B[1m> root project > Resolve dependencies of classpath > zipflinger-8.13.2.pom[m[0K[74D[1B[4A> IDLE[0K[6D[2B> IDLE[0K[6D[2B[4A[1m> root project > Resolve dependencies of classpath > kotlin-gradle-plugin-idea-[m[79D[1B[1m> root project > Resolve dependencies of classpath > kotlin-util-klib-metadata-[m[79D[1B[1m> root project > Resolve dependencies of classpath > kotlin-gradle-plugin-idea-[m[79D[1B[1m> root project > Resolve dependencies of classpath > kotlin-klib-commonizer-api[m[79D[1B[4A> IDLE[0K[6D[1B[1m> root project > Resolve dependencies of classpath > fus-statistics-gradle-plug[m[79D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[5A[1m<[0;1m-------------> 0% CONFIGURING [13s][m[36D[1B[1m> root project > Resolve dependencies of classpath > kotlinx-serialization-bom-[m[79D[1B[1m> root project > Resolve dependencies of classpath > okio-fakefilesystem-3.17.0[m[79D[1B[1m> root project > Resolve dependencies of classpath > wire-schema-6.2.0.module[m[77D[1B[1m> root project > Resolve dependencies of classpath > wire-swift-generator-6.2.0[m[79D[1B[4A> IDLE[0K[6D[1B[1m> root project > Resolve dependencies of classpath > kotlinpoet-2.2.0.pom[m[0K[73D[1B[1m> root project > Resolve dependencies of classpath > wire-runtime-6.2.0.pom[m[0K[75D[1B[1m> root project > Resolve dependencies of classpath > wire-grpc-client-6.2.0.pom[m[79D[1B[3A[1m> root project > Resolve dependencies of classpath > checker-qual-3.43.0.module[m[79D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[3A[1m> root project > Resolve dependencies of classpath > guava-parent-26.0-android.[m[79D[3B[3A[1m> root project > Resolve dependencies of classpath > kotlinx-coroutines-core-jv[m[79D[3B[3A[1m> root project > Resolve dependencies of classpath > commons-parent-34.pom[m[0K[74D[2B[1m> root project > Resolve dependencies of classpath > commons-parent-42.pom[m[74D[1B[3A> IDLE[0K[6D[2B[1m> root project > Resolve dependencies of classpath[m[0K[50D[1B[1A[1m> root project > Resolve dependencies of classpath > compose-compiler-gradle-pl[m[79D[1B[3A[1m> root project > Resolve dependencies of classpath > kotlin-tooling-core-2.2.21[m[79D[2B[1m> root project > Resolve dependencies of classpath > kotlin-gradle-plugin-annot[m[79D[1B[5A[1m<[0;1m-------------> 0% CONFIGURING [14s][m[36D[2B> IDLE[0K[6D[2B[1m> root project > Resolve dependencies of classpath > kotlin-build-tools-api-2.2[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath > kotlin-daemon-client-2.2.2[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath > okio-jvm-3.17.0.pom[m[0K[72D[1B[1A[1m> root project > Resolve dependencies of classpath > okio-fakefilesystem-jvm-3.[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath > kotlinx-serialization-core[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath > wire-schema-jvm-6.2.0.pom[m[0K[78D[1B[1A[1m> root project > Resolve dependencies of classpath > wire-runtime-jvm-6.2.0.mod[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath > wire-grpc-client-jvm-6.2.0[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath > netty-resolver-4.1.110.Fin[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath > kotlinx-datetime-0.7.1-0.6[m[79D[1B[5A[1m<[0;1m-------------> 0% CONFIGURING [15s][m[36D[4B[1m> root project > Resolve dependencies of classpath > kotlin-stdlib-2.3.0.pom[m[0K[76D[1B[1A[1m> root project > Resolve dependencies of classpath > snakeyaml-engine-kmp-4.0.1[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath > kotlinx-coroutines-bom-1.8[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath > kotlinx-coroutines-core-1.[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath[m[0K[50D[1B[1A[1m> root project > Resolve dependencies of classpath > okhttp-5.3.2.module[m[72D[1B[1A[1m> root project > Resolve dependencies of classpath > kotlinx-datetime-jvm-0.7.1[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath > kotlinx-coroutines-core-jv[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath[m[0K[50D[1B[1A[1m> root project > Resolve dependencies of classpath > urlencoder-lib-1.6.0.pom[m[77D[1B[5A[1m<[0;1m-------------> 0% CONFIGURING [16s][m[36D[4B[1m> root project > Resolve dependencies of classpath > urlencoder-lib-jvm-1.6.0.p[m[79D[1B[1A[1m> root project > Resolve dependencies of classpath[m[0K[50D[1B[4A[1m> root project > Resolve files of configuration 'classpath' > gradle-api-8.13.2[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > kotlin-gradle-plu[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > kotlin-gradle-plu[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > gradle-8.13.2.jar[m[79D[1B[4A[1m> root project > Resolve files of configuration 'classpath' > ddmlib-31.13.2.ja[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > builder-8.13.2.ja[m[79D[3B[4A[1m> root project > Resolve files of configuration 'classpath' > shared-31.13.2.ja[m[79D[4B[4A[1m> root project > Resolve files of configuration 'classpath' > android-test-plug[m[79D[4B[4A[1m> root project > Resolve files of configuration 'classpath' > jetifier-processo[m[79D[4B[4A> IDLE[0K[6D[2B> IDLE[0K[6D[2B[4A[1m> root project > Resolve files of configuration 'classpath' > wire-schema-jvm-6[m[79D[2B[1m> root project > Resolve files of configuration 'classpath' > kotlin-reflect-2.[m[79D[2B[5A[1m<[0;1m-------------> 0% CONFIGURING [17s][m[36D[1B[1m> root project > Resolve files of configuration 'classpath' > kaml-jvm-0.104.0.[m[79D[2B[1m> root project > Resolve files of configuration 'classpath' > okio-fakefilesyst[m[79D[1B> IDLE[0K[6D[1B[4A[1m> root project > Resolve files of configuration 'classpath'[m[0K[59D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[2B[4A[1m> root project > Resolve files of configuration 'classpath' > okio-jvm-3.17.0.j[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > kotlinx-serializa[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > kotlinx-datetime-[m[79D[2B[4A[1m> root project > Resolve files of configuration 'classpath' > asm-tree-9.8.jar[m[0K[78D[1B> IDLE[0K[6D[1B[1m> root project > Resolve files of configuration 'classpath' > asm-util-9.8.jar[m[0K[78D[2B[4A[1m> root project > Resolve files of configuration 'classpath' > core-proto-0.0.9-[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > proto-google-comm[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > protos-31.13.2.ja[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > grpc-netty-1.69.1[m[79D[1B[3A> IDLE[0K[6D[2B> IDLE[0K[6D[1B[4A[1m> root project > Resolve files of configuration 'classpath' > grpc-context-1.69[m[79D[2B[1m> root project > Resolve files of configuration 'classpath' > jimfs-1.1.jar[m[0K[75D[2B[4A[1m> root project > Resolve files of configuration 'classpath' > guava-33.3.1-jre.[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > bcprov-jdk18on-1.[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > bcutil-jdk18on-1.[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > httpcore-4.4.16.j[m[79D[1B[4A[1m> root project > Resolve files of configuration 'classpath' > jna-platform-5.6.[m[79D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[4A[1m> root project > Resolve files of configuration 'classpath' > animal-sniffer-an[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > jose4j-0.9.5.jar[m[78D[1B[1m> root project > Resolve files of configuration 'classpath' > netty-codec-http2[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > perfmark-api-0.27[m[79D[1B[5A[1m<[0;1m-------------> 0% CONFIGURING [18s][m[36D[1B[1m> root project > Resolve files of configuration 'classpath' > netty-common-4.1.[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > kotlin-gradle-plu[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > netty-resolver-4.[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > kotlin-util-io-2.[m[79D[1B[4A> IDLE[0K[6D[1B[1m> root project[m[0K[14D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[3A[1m> root project > Resolve files of configuration 'classpath' > Resolve files of [m[79D[3B[4A[1m> root project > Resolve files of configuration 'classpath' > Resolve files of [m[79D[3B[1m> root project > Resolve files of configuration 'classpath' > Resolve files of [m[79D[1B[2A[1m> root project > Resolve files of configuration 'classpath' > Resolve files of [m[79D[2B[2A> IDLE[0K[6D[2B[2A[1m> root project > Resolve files of configuration 'classpath' > Resolve files of [m[79D[2B[2A> IDLE[0K[6D[2B[2A[1m> root project > Resolve files of configuration 'classpath' > Resolve files of [m[79D[2B[5A[1m<[0;1m-------------> 0% CONFIGURING [19s][m[36D[3B> IDLE[0K[6D[2B[2A[1m> root project > Resolve files of configuration 'classpath' > Resolve files of [m[79D[2B[4A> IDLE[0K[6D[2B> IDLE[0K[6D[2B[3A> IDLE[0K[6D[3B[4A[1m> root project > Resolve files of configuration 'classpath' > MergeInstrumentat[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > MergeInstrumentat[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > MergeInstrumentat[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > MergeInstrumentat[m[79D[1B[5A[1m<[0;1m-------------> 0% CONFIGURING [20s][m[36D[5B[4A[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[2B[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[1B[3A[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[3B[4A> IDLE[0K[6D[4B[4A[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[4B[2A[1m> root project > Resolve files of configuration 'classpath' > MergeInstrumentat[m[79D[2B[5A[1m<[0;1m-------------> 0% CONFIGURING [21s][m[36D[3B[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[2B[2A> IDLE[0K[6D[2B[1A[1m> root project > Resolve files of configuration 'classpath' > MergeInstrumentat[m[79D[1B[2A[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[1B[4A> IDLE[0K[6D[3B> IDLE[0K[6D[1B[4A[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[4B[4A> IDLE[0K[6D[2B> IDLE[0K[6D[2B[4A[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[2B[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[1B[5A[1m<[0;1m-------------> 0% CONFIGURING [22s][m[36D[3B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[1A[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[1B[4A> IDLE[0K[6D[4B[1A> IDLE[0K[6D[1B[1A[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[1B[5A[1m<[0;1m-------------> 0% CONFIGURING [23s][m[36D[5B[1A> IDLE[0K[6D[1B[1A[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[1B[1A> IDLE[0K[6D[1B[1A[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[1B[1A> IDLE[0K[6D[1B[1A[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[1B[3A> IDLE[0K[6D[3B[5A[1m<[0;1m-------------> 0% CONFIGURING [24s][m[36D[2B[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[3B[4A[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[4B[1A> IDLE[0K[6D[1B[3A> IDLE[0K[6D[2B[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[1B[1A> IDLE[0K[6D[1B[4A[1m> root project > Resolve files of configuration 'classpath' > MergeInstrumentat[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[2B[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[1B[4A[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[2B[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[2B[3A> IDLE[0K[6D[3B[5A[1m<[0;1m-------------> 0% CONFIGURING [25s][m[36D[5B[4A> IDLE[0K[6D[2B> IDLE[0K[6D[2B[4A[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > MergeInstrumentat[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[2B[3A> IDLE[0K[6D[1B[1m> root project > Resolve files of configuration 'classpath' > MergeInstrumentat[m[79D[2B[4A> IDLE[0K[6D[2B[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[2B[4A[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[3B[5A[1m<[0;1m-------------> 0% CONFIGURING [26s][m[36D[4B[1m> root project > Resolve files of configuration 'classpath' > MergeInstrumentat[m[79D[1B[1A[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[1B[2A> IDLE[0K[6D[1B> IDLE[0K[6D[1B[2A[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[2B[1A[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[1B[1A> IDLE[0K[6D[1B[3A> IDLE[0K[6D[1B> IDLE[0K[6D[2B[3A[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[1B[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[1B[3A> IDLE[0K[6D[3B[3A[1m> root project > Resolve files of configuration 'classpath' > ExternalDependenc[m[79D[3B[5A[1m<[0;1m-------------> 0% CONFIGURING [27s][m[36D[5B[3A> IDLE[0K[6D[1B> IDLE[0K[6D[1B> IDLE[0K[6D[1B[4A[1m> root project > Resolve files of configuration 'classpath'[m[0K[59D[4B[4A[1m> root project[m[0K[14D[4B[5A[1m<[0;1m-------------> 0% CONFIGURING [28s][m[36D[5B[5A[1m<[0;1m-------------> 0% CONFIGURING [29s][m[36D[5B[5A[1m<[0;1m-------------> 0% CONFIGURING [30s][m[36D[5B[5A[1m<[0;1m-------------> 0% CONFIGURING [31s][m[36D[5B[5A[0K
+[1m> Configure project :[m[0K
+Starting build for GMS version v0.0.0.252432 (252432000)...[0K
+[2B[0K
+[0K
+[0K
+[5A[1m<[0;1m-------------> 0% CONFIGURING [31s][m[36D[1B[1m> root project[m[14D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1B[5A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [31s][m[37D[1B[1m> :play-services-base[m[21D[4B[5A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [32s][m[37D[5B[5A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [33s][m[37D[5B[5A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [34s][m[37D[5B[5A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [35s][m[37D[5B[5A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [36s][m[37D[5B[5A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [37s][m[37D[5B[5A[1m<[0;32;1m====[0;39;1m---------> 33% CONFIGURING [37s][m[37D[1B[1m> :play-services-basement[m[25D[4B[5A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [37s][m[37D[1B[1m> :play-services-fido[m[0K[21D[4B[5A[1m<[0;32;1m========[0;39;1m-----> 66% CONFIGURING [38s][m[37D[1B[1m> :play-services-tasks[m[22D[4B[5A[1m<[0;32;1m==========[0;39;1m---> 83% CONFIGURING [38s][m[37D[1B> IDLE[0K[6D[4B[5A[1m<[0;32;1m==========[0;39;1m---> 83% CONFIGURING [39s][m[37D[5B[5A[=========                              ] 25%                                   [80D[5B[0K
+[5A[1m<[0;32;1m==========[0;39;1m---> 83% CONFIGURING [40s][m[37D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1B[4A[1m> :safe-parcel-processor[m[24D[4B[5A[1m<[0;32;1m==========[0;39;1m---> 83% CONFIGURING [41s][m[37D[5B[5A[1m<[0;32;1m==========[0;39;1m---> 83% CONFIGURING [42s][m[37D[5B[5A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [42s][m[38D[1B> IDLE[0K[6D[4B[5A[1m<[0;1m-------------> 0% EXECUTING [42s][m[0K[34D[5B[6A[80C
+[1m> Task :play-services-base:preBuild[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-base:preReleaseBuild[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-basement:preBuild[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-basement:preReleaseBuild[m[33m UP-TO-DATE[39m[0K
+[1B[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;1m-------------> 2% EXECUTING [42s][m[34D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1B[5A[1m<[0;1m-------------> 2% EXECUTING [43s][m[34D[1B[1m> :play-services-basement:writeReleaseAarMetadata[m[49D[4B[5A[1m> Task :play-services-tasks:preBuild[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-tasks:preReleaseBuild[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-basement:writeReleaseAarMetadata[m[0K
+[1m> Task :play-services-tasks:writeReleaseAarMetadata[m[0K
+[1B[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;1m-------------> 4% EXECUTING [43s][m[34D[1B> IDLE[6D[1B[1m> :play-services-basement:compileReleaseAidl[m[44D[1B> IDLE[6D[1B> IDLE[6D[1B[4A[1m> :play-services-basement:compileReleaseAidl > Resolve dependencies of :play-se[m[79D[1B[1m> :play-services-basement:compileReleaseAidl > Resolve dependencies of :play-se[m[79D[3B[4A> IDLE[0K[6D[4B[4A[1m> :play-services-basement:compileReleaseAidl > Resolve dependencies of :play-se[m[79D[4B[2A[1m> :play-services-basement:compileReleaseAidl > Resolve dependencies of :play-se[m[79D[1B[1m> :play-services-basement:compileReleaseAidl > Resolve dependencies of :play-se[m[79D[1B[4A> IDLE[0K[6D[4B[3A> IDLE[0K[6D[1B> IDLE[0K[6D[2B[5A[1m<[0;1m-------------> 4% EXECUTING [44s][m[34D[5B[1A[1m> :play-services-basement:compileReleaseAidl[m[0K[44D[1B[3A[1m> :play-services-basement:compileReleaseAidl > Resolve files of configuration '[m[79D[1B[1m> :play-services-basement:compileReleaseAidl > Resolve files of configuration '[m[79D[1B[1m> :play-services-basement:compileReleaseAidl > Resolve files of configuration '[m[79D[1B[3A> IDLE[0K[6D[2B> IDLE[0K[6D[1B[2A[1m> :play-services-basement:compileReleaseAidl[m[0K[44D[1B[1m> :play-services-base:checkReleaseAarMetadata > Resolve dependencies of :play-s[m[79D[1B[5A[1m<[0;1m-------------> 4% EXECUTING [45s][m[34D[5B[4A[1m> :play-services-base:checkReleaseAarMetadata > Resolve dependencies of :play-s[m[79D[1B[1m> :play-services-base:checkReleaseAarMetadata > Resolve dependencies of :play-s[m[79D[3B[4A> IDLE[0K[6D[3B> IDLE[0K[6D[1B[4A[1m> :play-services-base:checkReleaseAarMetadata > Resolve dependencies of :play-s[m[79D[4B[3A> IDLE[0K[6D[3B[4A[1m> :play-services-base:checkReleaseAarMetadata > Resolve files of configuration [m[79D[4B[4A[1m> :play-services-base:checkReleaseAarMetadata[m[0K[45D[1B[1m> :play-services-base:mergeReleaseJniLibFolders[m[47D[3B[5A[1m> Task :play-services-base:checkReleaseAarMetadata[m[0K
+[1m> Task :play-services-base:mergeReleaseJniLibFolders[m[0K
+[1m> Task :play-services-base:mergeReleaseNativeLibs[m[33m NO-SOURCE[39m[0K
+[1m> Task :play-services-base:stripReleaseDebugSymbols[m[33m NO-SOURCE[39m[0K
+[1m> Task :play-services-base:generateReleaseResValues[m[0K
+[1m> Task :play-services-base:copyReleaseJniLibsProjectAndLocalJars[m
+[0K
+[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;32;1m=[0;39;1m------------> 8% EXECUTING [46s][m[34D[1B> IDLE[6D[1B[1m> :play-services-base:extractDeepLinksForAarRelease[m[51D[1B[1m> :play-services-basement:compileReleaseAidl[m[44D[1B> IDLE[6D[1B[5A[1m> Task :play-services-base:extractDeepLinksForAarRelease[m[0K
+[1m> Task :play-services-base:generateReleaseResources[m[0K
+[1m> Task :play-services-base:packageReleaseResources[m[0K
+[1m> Task :play-services-base:processReleaseNavigationResources[m[0K
+[1B[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;32;1m=[0;39;1m------------> 11% EXECUTING [46s][m[35D[1B> IDLE[6D[1B[1m> :play-services-base:parseReleaseLocalResources > Resolve files of configurati[m[79D[1B[1m> :play-services-basement:compileReleaseAidl[m[44D[1B> IDLE[6D[1B[5A[1m> Task :play-services-basement:compileReleaseAidl[m[0K
+[4B[0K
+[5A[1m<[0;32;1m=[0;39;1m------------> 11% EXECUTING [46s][m[35D[1B> IDLE[0K[6D[1B[1m> :play-services-base:parseReleaseLocalResources[m[48D[1B[1m> :play-services-base:compileReleaseAidl > Resolve dependencies of :play-servic[m[79D[1B> IDLE[6D[1B[5A[1m> Task :play-services-basement:generateReleaseBuildConfig[m[0K
+[1m> Task :play-services-basement:generateReleaseResValues[m[0K
+[1m> Task :play-services-basement:generateReleaseResources[m[0K
+[2B[0K
+[0K
+[0K
+[5A[1m<[0;32;1m=[0;39;1m------------> 13% EXECUTING [46s][m[0K[35D[1B[1m> :play-services-basement:packageReleaseResources[m[49D[1B[1m> :play-services-base:parseReleaseLocalResources[m[48D[1B[1m> :play-services-base:compileReleaseAidl[m[40D[1B> IDLE[6D[1B[5A[1m> Task :play-services-base:parseReleaseLocalResources[m[0K
+[1m> Task :play-services-basement:packageReleaseResources[m[0K
+[3B[0K
+[0K
+[5A[1m<[0;32;1m=[0;39;1m------------> 14% EXECUTING [46s][m[0K[35D[1B[1m> :play-services-base:generateReleaseRFile[m[42D[1B> IDLE[6D[1B[1m> :play-services-base:compileReleaseAidl[m[40D[1B> IDLE[6D[1B[5A[1m> Task :play-services-basement:processReleaseNavigationResources[m[0K
+[1m> Task :safe-parcel-processor:checkKotlinGradlePluginConfigurationErrors[m[33m SKIPPED[39m[0K
+[1m> Task :play-services-base:generateReleaseRFile[m[0K
+[1m> Task :play-services-basement:parseReleaseLocalResources[m[0K
+[1B[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;32;1m==[0;39;1m-----------> 17% EXECUTING [47s][m[35D[1B> IDLE[6D[1B[1m> :safe-parcel-processor:compileKotlin > Resolve files of configuration ':safe-[m[79D[1B[1m> :play-services-base:compileReleaseAidl[m[40D[1B> IDLE[6D[1B[4A[1m> :safe-parcel-processor:compileKotlin > Resolve files of configuration ':safe-[m[79D[4B[3A> IDLE[0K[6D[3B[3A[1m> :safe-parcel-processor:compileKotlin > Resolve files of configuration ':safe-[m[79D[3B[3A> IDLE[0K[6D[3B[5A[1m<[0;32;1m==[0;39;1m-----------> 17% EXECUTING [48s][m[35D[5B[5A[1m<[0;32;1m==[0;39;1m-----------> 17% EXECUTING [49s][m[35D[5B[5A[1m<[0;32;1m==[0;39;1m-----------> 17% EXECUTING [50s][m[35D[5B[5A[1m> Task :play-services-base:compileReleaseAidl[m[0K
+[4B[0K
+[5A[1m<[0;32;1m==[0;39;1m-----------> 18% EXECUTING [50s][m[0K[35D[1B[1m> :safe-parcel-processor:compileKotlin > Resolve files of configuration ':safe-[m[79D[1B> IDLE[0K[6D[1B> IDLE[6D[1B> IDLE[6D[1B[2A[1m> :safe-parcel-processor:compileKotlin > Resolve files of configuration ':safe-[m[79D[2B[2A> IDLE[0K[6D[2B[5A[1m<[0;32;1m==[0;39;1m-----------> 18% EXECUTING [51s][m[35D[5B[4A[1m> :safe-parcel-processor:compileKotlin[m[0K[38D[4B[5A[1m<[0;32;1m==[0;39;1m-----------> 18% EXECUTING [52s][m[35D[5B[5A[1m<[0;32;1m==[0;39;1m-----------> 18% EXECUTING [53s][m[35D[5B[3A[1m> :safe-parcel-processor:processResources[m[41D[1B[1m> :play-services-basement:generateReleaseRFile[m[46D[2B[5A[1m> Task :play-services-basement:generateReleaseRFile[m[0K
+[1m> Task :safe-parcel-processor:processResources[m[0K
+[1m> Task :play-services-tasks:generateReleaseResValues[m[0K
+[1m> Task :play-services-tasks:generateReleaseResources[m[0K
+[1m> Task :play-services-tasks:packageReleaseResources[m[0K
+[1m> Task :play-services-tasks:processReleaseNavigationResources[m
+[0K
+[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;32;1m==[0;39;1m-----------> 21% EXECUTING [53s][m[35D[1B[1m> :safe-parcel-processor:compileKotlin[m[38D[1B[1m> :play-services-tasks:parseReleaseLocalResources[m[49D[1B[1m> :play-services-tasks:javaPreCompileRelease[m[44D[1B> IDLE[6D[1B[5A[1m> Task :play-services-tasks:parseReleaseLocalResources[m[0K
+[1m> Task :play-services-tasks:javaPreCompileRelease[m[0K
+[1m> Task :play-services-base:mergeReleaseShaders[m[0K
+[1m> Task :play-services-base:compileReleaseShaders[m[33m NO-SOURCE[39m[0K
+[1m> Task :play-services-base:generateReleaseAssets[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-tasks:generateReleaseRFile[m
+[1m> Task :play-services-base:mergeReleaseAssets[m
+[1m> Task :play-services-base:prepareLintJarForPublish[m
+[1m> Task :play-services-base:prepareReleaseArtProfile[m
+[0K
+[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;32;1m===[0;39;1m----------> 27% EXECUTING [53s][m[35D[1B[1m> :safe-parcel-processor:compileKotlin[m[38D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1B[5A[1m> Task :play-services-base:writeReleaseAarMetadata[m[0K
+[1m> Task :play-services-base:javaDocReleaseJar[m[0K
+[3B[0K
+[0K
+[5A[1m<[0;32;1m===[0;39;1m----------> 28% EXECUTING [54s][m[35D[1B[1m> :safe-parcel-processor:compileKotlin[m[38D[1B[1m> :play-services-base:sourceReleaseJar[m[38D[1B[1m> :play-services-base:processReleaseManifest[m[44D[1B> IDLE[6D[1B[5A[1m> Task :play-services-base:processReleaseManifest[m[0K
+[4B[0K
+[5A[1m<[0;32;1m===[0;39;1m----------> 29% EXECUTING [54s][m[0K[35D[1B[1m> :safe-parcel-processor:compileKotlin[m[38D[1B[1m> :play-services-base:sourceReleaseJar[m[0K[38D[1B> IDLE[6D[1B> IDLE[6D[1B[5A[1m> Task :play-services-base:sourceReleaseJar[m[0K
+[1m> Task :play-services-base:generatePomFileForReleasePublication[m[0K
+[3B[0K
+[0K
+[5A[1m<[0;32;1m===[0;39;1m----------> 30% EXECUTING [54s][m[0K[35D[1B[1m> :safe-parcel-processor:compileKotlin[m[38D[1B[1m> :play-services-basement:checkReleaseAarMetadata > Resolve files of configurat[m[79D[1B> IDLE[6D[1B> IDLE[6D[1B[5A[1m> Task :play-services-basement:checkReleaseAarMetadata[m[0K
+[1m> Task :play-services-basement:mergeReleaseJniLibFolders[m[0K
+[1m> Task :play-services-basement:mergeReleaseNativeLibs[m[33m NO-SOURCE[39m[0K
+[1m> Task :play-services-basement:stripReleaseDebugSymbols[m[33m NO-SOURCE[39m[0K
+[1m> Task :play-services-basement:copyReleaseJniLibsProjectAndLocalJars[m[0K
+[1m> Task :play-services-basement:extractDeepLinksForAarRelease[m
+[0K
+[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;32;1m====[0;39;1m---------> 34% EXECUTING [54s][m[35D[1B[1m> :safe-parcel-processor:compileKotlin[m[38D[1B[1m> :play-services-basement:extractReleaseAnnotations > Resolve files of configur[m[79D[1B> IDLE[6D[1B> IDLE[6D[1B[2A[1m> :play-services-basement:extractReleaseAnnotations > Resolve files of configur[m[79D[2B[3A> IDLE[0K[6D[3B[2A[1m> :play-services-basement:extractReleaseAnnotations[m[0K[51D[2B[5A[1m<[0;32;1m====[0;39;1m---------> 34% EXECUTING [55s][m[35D[5B[5A[1m<[0;32;1m====[0;39;1m---------> 34% EXECUTING [56s][m[35D[5B[2A[1m> :play-services-basement:extractReleaseAnnotations > Resolve dependencies of :[m[79D[2B[3A[1m> :play-services-basement:extractReleaseAnnotations > Resolve dependencies of :[m[79D[2B[1m> :play-services-basement:extractReleaseAnnotations > Resolve dependencies of :[m[79D[1B[2A> IDLE[0K[6D[1B> IDLE[0K[6D[1B[1A[1m> :play-services-basement:extractReleaseAnnotations > Resolve dependencies of :[m[79D[1B[1A> IDLE[0K[6D[1B[5A[1m<[0;32;1m====[0;39;1m---------> 34% EXECUTING [57s][m[35D[5B[3A[1m> :play-services-basement:extractReleaseAnnotations > Resolve files of configur[m[79D[1B[1m> :play-services-basement:extractReleaseAnnotations > Resolve files of configur[m[79D[1B[1m> :play-services-basement:extractReleaseAnnotations > Resolve files of configur[m[79D[1B[3A> IDLE[0K[6D[3B[5A[1m<[0;32;1m====[0;39;1m---------> 34% EXECUTING [58s][m[35D[5B[1A> IDLE[0K[6D[1B[2A[1m> :play-services-basement:extractReleaseAnnotations[m[0K[51D[2B[5A[1m<[0;32;1m====[0;39;1m---------> 34% EXECUTING [59s][m[35D[5B[5A[1m<[0;32;1m====[0;39;1m---------> 34% EXECUTING [1m][m[0K[34D[5B[5A[1m<[0;32;1m====[0;39;1m---------> 34% EXECUTING [1m 1s][m[37D[5B[5A[1m<[0;32;1m====[0;39;1m---------> 34% EXECUTING [1m 2s][m[37D[5B[5A[1m<[0;32;1m====[0;39;1m---------> 34% EXECUTING [1m 3s][m[37D[5B[5A[1m> Task :play-services-basement:extractReleaseAnnotations[m[0K
+[1m> Task :play-services-basement:mergeReleaseShaders[m[0K
+[1m> Task :play-services-basement:compileReleaseShaders[m[33m NO-SOURCE[39m[0K
+[1m> Task :play-services-basement:generateReleaseAssets[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-basement:mergeReleaseAssets[m[0K
+[1m> Task :play-services-basement:prepareLintJarForPublish[m
+[1m> Task :play-services-basement:prepareReleaseArtProfile[m
+[0K
+[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;32;1m=====[0;39;1m--------> 38% EXECUTING [1m 3s][m[37D[1B[1m> :safe-parcel-processor:compileKotlin[m[38D[1B> IDLE[6D[1B[1m> :play-services-basement:processReleaseManifest[m[48D[1B> IDLE[6D[1B[5A[1m> Task :play-services-basement:javaDocReleaseJar[m[0K
+[1m> Task :play-services-basement:processReleaseManifest[m[0K
+[1m> Task :play-services-basement:sourceReleaseJar[m[0K
+[1m> Task :play-services-basement:generatePomFileForReleasePublication[m[0K
+[1m> Task :play-services-fido:preBuild[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-fido:preReleaseBuild[m[33m UP-TO-DATE[39m
+[0K
+[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;32;1m=====[0;39;1m--------> 42% EXECUTING [1m 4s][m[37D[1B[1m> :safe-parcel-processor:compileKotlin[m[38D[1B> IDLE[6D[1B[1m> :play-services-fido:checkReleaseAarMetadata > Resolve files of configuration [m[79D[1B> IDLE[6D[1B[5A[1m> Task :play-services-fido:checkReleaseAarMetadata[m[0K
+[1m> Task :play-services-fido:mergeReleaseJniLibFolders[m[0K
+[1m> Task :play-services-fido:mergeReleaseNativeLibs[m[33m NO-SOURCE[39m[0K
+[1m> Task :play-services-fido:stripReleaseDebugSymbols[m[33m NO-SOURCE[39m[0K
+[1m> Task :play-services-fido:copyReleaseJniLibsProjectAndLocalJars[m[0K
+[0K
+[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;32;1m=====[0;39;1m--------> 45% EXECUTING [1m 4s][m[37D[1B[1m> :safe-parcel-processor:compileKotlin[m[38D[1B> IDLE[6D[1B[1m> :play-services-fido:generateReleaseResValues[m[46D[1B[1m> :play-services-fido:compileReleaseAidl[m[40D[1B[5A[1m> Task :play-services-fido:generateReleaseResValues[m[0K
+[1m> Task :play-services-fido:extractDeepLinksForAarRelease[m[0K
+[1m> Task :play-services-fido:generateReleaseResources[m[0K
+[1m> Task :play-services-fido:packageReleaseResources[m[0K
+[1m> Task :play-services-fido:processReleaseNavigationResources[m[0K
+[1m> Task :play-services-fido:mergeReleaseShaders[m
+[1m> Task :play-services-fido:parseReleaseLocalResources[m
+[1m> Task :play-services-fido:compileReleaseShaders[m[33m NO-SOURCE[39m
+[0K
+[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;32;1m======[0;39;1m-------> 50% EXECUTING [1m 4s][m[37D[1B[1m> :safe-parcel-processor:compileKotlin[m[38D[1B> IDLE[6D[1B[1m> :play-services-fido:generateReleaseRFile[m[42D[1B[1m> :play-services-fido:compileReleaseAidl[m[40D[1B[5A[1m> Task :play-services-fido:generateReleaseAssets[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-fido:generateReleaseRFile[m[0K
+[1m> Task :play-services-fido:mergeReleaseAssets[m[0K
+[1m> Task :play-services-fido:prepareLintJarForPublish[m[0K
+[1m> Task :play-services-fido:prepareReleaseArtProfile[m[0K
+[1m> Task :play-services-fido:processReleaseManifest[m
+[1m> Task :play-services-fido:writeReleaseAarMetadata[m
+[1m> Task :play-services-fido:javaDocReleaseJar[m
+[1m> Task :play-services-fido:generatePomFileForReleasePublication[m
+[0K
+[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;32;1m=======[0;39;1m------> 55% EXECUTING [1m 4s][m[37D[1B[1m> :safe-parcel-processor:compileKotlin[m[38D[1B> IDLE[6D[1B[1m> :play-services-tasks:checkReleaseAarMetadata[m[46D[1B[1m> :play-services-fido:compileReleaseAidl[m[40D[1B[5A[1m> Task :play-services-tasks:checkReleaseAarMetadata[m[0K
+[1m> Task :play-services-tasks:mergeReleaseJniLibFolders[m[0K
+[1m> Task :play-services-tasks:mergeReleaseNativeLibs[m[33m NO-SOURCE[39m[0K
+[1m> Task :play-services-tasks:stripReleaseDebugSymbols[m[33m NO-SOURCE[39m[0K
+[1m> Task :play-services-tasks:copyReleaseJniLibsProjectAndLocalJars[m[0K
+[1m> Task :play-services-tasks:extractDeepLinksForAarRelease[m
+[1m> Task :play-services-tasks:mergeReleaseShaders[m
+[1m> Task :play-services-tasks:compileReleaseShaders[m[33m NO-SOURCE[39m
+[1m> Task :play-services-tasks:generateReleaseAssets[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-tasks:mergeReleaseAssets[m
+[1m> Task :play-services-tasks:prepareLintJarForPublish[m
+[1m> Task :play-services-tasks:prepareReleaseArtProfile[m
+[0K
+[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;32;1m========[0;39;1m-----> 63% EXECUTING [1m 4s][m[37D[1B[1m> :safe-parcel-processor:compileKotlin[m[38D[1B[1m> :play-services-tasks:processReleaseJavaRes[m[44D[1B[1m> :play-services-tasks:processReleaseManifest[m[45D[1B[1m> :play-services-fido:compileReleaseAidl[m[40D[1B[5A[1m> Task :play-services-tasks:processReleaseJavaRes[m[33m NO-SOURCE[39m[0K
+[1m> Task :play-services-tasks:processReleaseManifest[m[0K
+[1m> Task :play-services-tasks:javaDocReleaseJar[m[0K
+[1m> Task :play-services-tasks:sourceReleaseJar[m[0K
+[1m> Task :play-services-tasks:generatePomFileForReleasePublication[m[0K
+[0K
+[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;32;1m========[0;39;1m-----> 66% EXECUTING [1m 4s][m[37D[1B[1m> :safe-parcel-processor:compileKotlin[m[38D[1B[1m> :play-services-tasks:mergeReleaseJavaResource[m[47D[1B> IDLE[6D[1B[1m> :play-services-fido:compileReleaseAidl[m[40D[1B[5A[1m> Task :play-services-tasks:mergeReleaseJavaResource[m[0K
+[4B[0K
+[5A[1m<[0;32;1m========[0;39;1m-----> 67% EXECUTING [1m 4s][m[0K[37D[1B[1m> :safe-parcel-processor:compileKotlin[m[0K[38D[1B> IDLE[6D[1B> IDLE[0K[6D[1B[1m> :play-services-fido:compileReleaseAidl[m[40D[1B[5A[1m<[0;32;1m========[0;39;1m-----> 67% EXECUTING [1m 5s][m[37D[5B[5A[1m> Task :play-services-fido:compileReleaseAidl[m[0K
+[4B[0K
+[5A[1m<[0;32;1m========[0;39;1m-----> 67% EXECUTING [1m 5s][m[0K[37D[1B[1m> :safe-parcel-processor:compileKotlin[m[38D[1B> IDLE[6D[1B> IDLE[0K[6D[1B[1m> :play-services-fido:sourceReleaseJar[m[38D[1B[5A[1m> Task :play-services-fido:sourceReleaseJar[m[0K
+[4B[0K
+[5A[1m<[0;32;1m========[0;39;1m-----> 68% EXECUTING [1m 5s][m[0K[37D[1B[1m> :safe-parcel-processor:compileKotlin[m[38D[1B> IDLE[6D[1B> IDLE[0K[6D[1B> IDLE[6D[1B[5A[1m<[0;32;1m========[0;39;1m-----> 68% EXECUTING [1m 6s][m[37D[5B[5A[1m<[0;32;1m========[0;39;1m-----> 68% EXECUTING [1m 7s][m[37D[5B[5A[1m<[0;32;1m========[0;39;1m-----> 68% EXECUTING [1m 8s][m[37D[5B[5A[1m> Task :safe-parcel-processor:compileKotlin[m[0K
+[1m> Task :safe-parcel-processor:compileJava[m[33m NO-SOURCE[39m[0K
+[1m> Task :safe-parcel-processor:classes[m[0K
+[1m> Task :safe-parcel-processor:jar[m[0K
+[1B[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;32;1m=========[0;39;1m----> 70% EXECUTING [1m 8s][m[37D[1B[1m> :play-services-basement:javaPreCompileRelease > Resolve dependencies of :play[m[79D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1B[5A[1m> Task :play-services-basement:javaPreCompileRelease[m[0K
+[1m> Task :play-services-base:javaPreCompileRelease[m[0K
+[3B[0K
+[0K
+[5A[1m<[0;32;1m=========[0;39;1m----> 72% EXECUTING [1m 8s][m[37D[1B[1m> :play-services-basement:compileReleaseJavaWithJavac[m[53D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1B[5A[1m<[0;32;1m=========[0;39;1m----> 72% EXECUTING [1m 9s][m[37D[5B[5A[1m<[0;32;1m=========[0;39;1m----> 72% EXECUTING [1m 10s][m[38D[5B[5A[0K
+[1m> Task :play-services-basement:compileReleaseJavaWithJavac[m[0K
+Java compiler version 21 has deprecated support for compiling with source/target version 8.[0K
+Try one of the following options:[0K
+    1. [Recommended] Use Java toolchain with a lower language version[0K
+    2. Set a higher source/target version
+    3. Use a lower version of the JDK running the build (if you're not using Java toolchain)
+For more details on how to configure these settings, see https://developer.android.com/build/jdks.
+To suppress this warning, set android.javaCompile.suppressSourceTargetDeprecationWarning=true in gradle.properties.
+[0K
+[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;32;1m=========[0;39;1m----> 72% EXECUTING [1m 10s][m[38D[1B[1m> :play-services-basement:compileReleaseJavaWithJavac[m[53D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1B[5A[1m<[0;32;1m=========[0;39;1m----> 72% EXECUTING [1m 11s][m[38D[5B[5A[1m<[0;32;1m=========[0;39;1m----> 72% EXECUTING [1m 12s][m[38D[5B[5A[1m<[0;32;1m=========[0;39;1m----> 72% EXECUTING [1m 13s][m[38D[5B[5A[0K
+[1m> Task :play-services-basement:mergeReleaseGeneratedProguardFiles[m[0K
+[1m> Task :play-services-basement:mergeReleaseConsumerProguardFiles[m[0K
+[1m> Task :play-services-basement:processReleaseJavaRes[m[0K
+[1B[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;32;1m=========[0;39;1m----> 74% EXECUTING [1m 13s][m[38D[1B[1m> :play-services-basement:bundleLibCompileToJarRelease[m[54D[1B> IDLE[6D[1B> IDLE[6D[1B[1m> :play-services-basement:mergeReleaseJavaResource[m[50D[1B[5A[1m> Task :play-services-basement:bundleLibCompileToJarRelease[m[0K
+[1m> Task :play-services-fido:javaPreCompileRelease[m[0K
+[1m> Task :play-services-basement:mergeReleaseJavaResource[m[0K
+[2B[0K
+[0K
+[0K
+[5A[1m<[0;32;1m=========[0;39;1m----> 76% EXECUTING [1m 13s][m[38D[1B[1m> :play-services-tasks:compileReleaseJavaWithJavac[m[50D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1BWarning: SDK processing. This version only understands SDK XML versions up to 3 but an SDK XML file of version 4 was encountered. This can happen if you use versions of Android Studio and the command-line tools that were released at different times.
+warning: [options] source value 8 is obsolete and will be removed in a future release
+warning: [options] target value 8 is obsolete and will be removed in a future release
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+3 warnings
+warning: [5A[0K
+[1m> Task :play-services-tasks:compileReleaseJavaWithJavac[m[0K
+Java compiler version 21 has deprecated support for compiling with source/target version 8.[0K
+Try one of the following options:[0K
+    1. [Recommended] Use Java toolchain with a lower language version[0K
+    2. Set a higher source/target version
+    3. Use a lower version of the JDK running the build (if you're not using Java toolchain)
+For more details on how to configure these settings, see https://developer.android.com/build/jdks.
+To suppress this warning, set android.javaCompile.suppressSourceTargetDeprecationWarning=true in gradle.properties.
+
+[1m> Task :play-services-tasks:bundleLibCompileToJarRelease[m
+[1m> Task :play-services-basement:syncReleaseLibJars[m
+[0K
+[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;32;1m==========[0;39;1m---> 78% EXECUTING [1m 13s][m[38D[1B[1m> :play-services-base:extractReleaseAnnotations > Resolve files of configuratio[m[79D[1B> IDLE[6D[1B> IDLE[6D[1B[1m> :play-services-base:extractReleaseAnnotations > Resolve files of configuratio[m[79D[1B[3A[1m> :play-services-base:extractReleaseAnnotations > Resolve files of configuratio[m[79D[3B[4A[1m> :play-services-base:extractReleaseAnnotations[m[0K[47D[1B> IDLE[0K[6D[2B> IDLE[0K[6D[1B[5A[1m<[0;32;1m==========[0;39;1m---> 78% EXECUTING [1m 14s][m[38D[5B[3A[1m> :play-services-base:compileReleaseJavaWithJavac[m[49D[3B[5A[1m<[0;32;1m==========[0;39;1m---> 78% EXECUTING [1m 15s][m[38D[5B[5A[1m<[0;32;1m==========[0;39;1m---> 78% EXECUTING [1m 16s][m[38D[5B[5A[0K
+[1m> Task :play-services-base:compileReleaseJavaWithJavac[m[0K
+Java compiler version 21 has deprecated support for compiling with source/target version 8.[0K
+Try one of the following options:[0K
+    1. [Recommended] Use Java toolchain with a lower language version[0K
+    2. Set a higher source/target version
+    3. Use a lower version of the JDK running the build (if you're not using Java toolchain)
+For more details on how to configure these settings, see https://developer.android.com/build/jdks.
+To suppress this warning, set android.javaCompile.suppressSourceTargetDeprecationWarning=true in gradle.properties.
+[0K
+[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;32;1m==========[0;39;1m---> 78% EXECUTING [1m 16s][m[38D[1B[1m> :play-services-base:extractReleaseAnnotations[m[47D[1B[1m> :play-services-base:compileReleaseJavaWithJavac[m[49D[1B> IDLE[6D[1B> IDLE[6D[1B[options] source value 8 is obsolete and will be removed in a future release
+warning: [options] target value 8 is obsolete and will be removed in a future release
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+Note: /home/builder/Straighter/external/gmscore/play-services-tasks/src/main/java/com/google/android/gms/tasks/Tasks.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+3 warnings
+warning: [options] source value 8 is obsolete and will be removed in a future release
+warning: [options] target value 8 is obsolete and will be removed in a future release
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+Note: Some input file[5A[0K
+[1m> Task :play-services-base:mergeReleaseGeneratedProguardFiles[m[0K
+[3B[0K
+[0K
+[5A[1m<[0;32;1m==========[0;39;1m---> 79% EXECUTING [1m 16s][m[0K[38D[1B[1m> :play-services-base:extractReleaseAnnotations[m[47D[1B[1m> :play-services-base:mergeReleaseConsumerProguardFiles[m[55D[1B> IDLE[6D[1B> IDLE[6D[1B[5A[1m> Task :play-services-base:mergeReleaseConsumerProguardFiles[m[0K
+[1m> Task :play-services-base:processReleaseJavaRes[m[0K
+[1m> Task :play-services-base:mergeReleaseJavaResource[m[0K
+[1m> Task :play-services-basement:bundleReleaseAar[m[0K
+[1m> Task :play-services-basement:generateMetadataFileForReleasePublication[m[0K
+[0K
+[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;32;1m==========[0;39;1m---> 82% EXECUTING [1m 16s][m[38D[1B[1m> :play-services-base:extractReleaseAnnotations[m[47D[1B[1m> :play-services-basement:publishReleasePublicationToMavenLocal[m[63D[1B> IDLE[6D[1B> IDLE[6D[1B[5A[1m> Task :play-services-basement:publishReleasePublicationToMavenLocal[m[0K
+[1m> Task :play-services-basement:publishToMavenLocal[m[0K
+[1m> Task :play-services-tasks:extractReleaseAnnotations[m[0K
+[1m> Task :play-services-tasks:mergeReleaseGeneratedProguardFiles[m[0K
+[1m> Task :play-services-tasks:mergeReleaseConsumerProguardFiles[m[0K
+[1m> Task :play-services-base:bundleLibCompileToJarRelease[m
+[0K
+[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;32;1m===========[0;39;1m--> 86% EXECUTING [1m 17s][m[38D[1B[1m> :play-services-base:extractReleaseAnnotations[m[47D[1B[1m> :play-services-tasks:syncReleaseLibJars[m[41D[1B> IDLE[6D[1B> IDLE[6D[1B[5A[1m> Task :play-services-tasks:syncReleaseLibJars[m[0K
+[1m> Task :play-services-fido:extractReleaseAnnotations[m[0K
+[3B[0K
+[0K
+[5A[1m<[0;32;1m===========[0;39;1m--> 87% EXECUTING [1m 17s][m[0K[38D[1B[1m> :play-services-base:extractReleaseAnnotations[m[47D[1B[1m> :play-services-fido:compileReleaseJavaWithJavac[m[49D[1B> IDLE[6D[1B> IDLE[6D[1B[5A[1m<[0;32;1m===========[0;39;1m--> 87% EXECUTING [1m 18s][m[38D[5B[5A[0K
+[1m> Task :play-services-fido:compileReleaseJavaWithJavac[m[0K
+Java compiler version 21 has deprecated support for compiling with source/target version 8.[0K
+Try one of the following options:[0K
+    1. [Recommended] Use Java toolchain with a lower language version[0K
+    2. Set a higher source/target version
+    3. Use a lower version of the JDK running the build (if you're not using Java toolchain)
+For more details on how to configure these settings, see https://developer.android.com/build/jdks.
+To suppress this warning, set android.javaCompile.suppressSourceTargetDeprecationWarning=true in gradle.properties.
+
+[1m> Task :play-services-fido:mergeReleaseGeneratedProguardFiles[m
+[1m> Task :play-services-fido:mergeReleaseConsumerProguardFiles[m
+[1m> Task :play-services-fido:processReleaseJavaRes[m
+[1m> Task :play-services-fido:mergeReleaseJavaResource[m
+[0K
+[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;32;1m===========[0;39;1m--> 90% EXECUTING [1m 19s][m[38D[1B[1m> :play-services-base:extractReleaseAnnotations[m[47D[1B[1m> :play-services-tasks:bundleReleaseAar[m[39D[1B> IDLE[6D[1B> IDLE[6D[1B[5A[1m> Task :play-services-tasks:bundleReleaseAar[m[0K
+[1m> Task :play-services-fido:syncReleaseLibJars[m[0K
+[3B[0K
+[0K
+[5A[1m<[0;32;1m===========[0;39;1m--> 91% EXECUTING [1m 19s][m[0K[38D[1B[1m> :play-services-base:extractReleaseAnnotations[m[47D[1B[1m> :play-services-fido:bundleReleaseAar[m[38D[1B> IDLE[6D[1B> IDLE[6D[1B[5A[1m> Task :play-services-fido:bundleReleaseAar[m[0K
+[1m> Task :play-services-fido:generateMetadataFileForReleasePublication[m[0K
+[1m> Task :play-services-fido:publishReleasePublicationToMavenLocal[m[0K
+[1m> Task :play-services-fido:publishToMavenLocal[m[0K
+[1m> Task :play-services-tasks:generateMetadataFileForReleasePublication[m[0K
+[1m> Task :play-services-tasks:publishReleasePublicationToMavenLocal[m
+[1m> Task :play-services-tasks:publishToMavenLocal[m
+[0K
+[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;32;1m============[0;39;1m-> 96% EXECUTING [1m 19s][m[38D[1B[1m> :play-services-base:extractReleaseAnnotations[m[47D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1B[5A[1m> Task :play-services-base:extractReleaseAnnotations[m[0K
+[4B[0K
+[5A[1m<[0;32;1m============[0;39;1m-> 96% EXECUTING [1m 19s][m[0K[38D[1B[1m> :play-services-base:syncReleaseLibJars[m[40D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1B[5A[1m> Task :play-services-base:syncReleaseLibJars[m[0K
+[4B[0K
+[5A[1m<[0;32;1m============[0;39;1m-> 97% EXECUTING [1m 19s][m[0K[38D[1B[1m> :play-services-base:bundleReleaseAar[m[38D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1B[5A[1m> Task :play-services-base:bundleReleaseAar[m[0K
+[1m> Task :play-services-base:generateMetadataFileForReleasePublication[m[0K
+[1m> Task :play-services-base:publishReleasePublicationToMavenLocal[m[0K
+[1m> Task :play-services-base:publishToMavenLocal[m[0K
+[0K
+[Incubating] Problems report is available at: file:///home/builder/Straighter/external/gmscore/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+[0K
+[0K
+[0K
+[0K
+[0K
+[5A[1m<[0;32;1m=============[0;39;1m> 100% EXECUTING [1m 19s][m[39D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1B[5A[32;1mBUILD SUCCESSFUL[0;39m in 1m 24s[0K
+129 actionable tasks: 129 executed[0K
+[3B[0K
+[0K
+[5A[1m<[0;1m-------------> 0% WAITING[m[26D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1B> IDLE[6D[1Bs use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+3 warnings
+warning: [options] source value 8 is obsolete and will be removed in a future release
+warning: [options] target value 8 is obsolete and will be removed in a future release
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+3 warnings
+[5A[2K[1B[2K[1B[2K[1B[2K[1B[2K[4A~/Straighter
+[32mSUCCESS: Built microG[0m
+~/Straighter/external/gecko ~/Straighter
+[31mBuilding Gecko (ARM64)...[0m
+Using Python 3.14.7 environment at: /home/builder/Straighter/build/.mozbuild/srcdirs/gecko-1a10f68dd163/_virtualenvs/mach
+Resolved 1 package in 218ms
+Prepared 1 package in 10ms
+Installed 1 package in 3ms
+ + orjson==3.12.0
+Using Python 3.14.7 environment at: /home/builder/Straighter/build/.mozbuild/srcdirs/gecko-1a10f68dd163/_virtualenvs/mach
+Resolved 1 package in 148ms
+Prepared 1 package in 11ms
+Installed 1 package in 2ms
+ + psutil==7.2.2
+Using Python 3.14.7 environment at: /home/builder/Straighter/build/.mozbuild/srcdirs/gecko-1a10f68dd163/_virtualenvs/mach
+Resolved 1 package in 370ms
+Prepared 1 package in 15ms
+Installed 1 package in 2ms
+ + rtoml==0.13.0
+Using Python 3.14.7 environment at: /home/builder/Straighter/build/.mozbuild/srcdirs/gecko-1a10f68dd163/_virtualenvs/mach
+Resolved 1 package in 159ms
+Downloading zstandard (5.3MiB)
+ Downloaded zstandard
+Prepared 1 package in 87ms
+Installed 1 package in 2ms
+ + zstandard==0.25.0
+Using Python 3.14.7 environment at: /home/builder/Straighter/build/.mozbuild/srcdirs/gecko-1a10f68dd163/_virtualenvs/mach
+Resolved 1 package in 140ms
+Prepared 1 package in 20ms
+Installed 1 package in 2ms
+ + pyyaml==6.0.3
+Using Python 3.14.7 environment at: /home/builder/Straighter/build/.mozbuild/srcdirs/gecko-1a10f68dd163/_virtualenvs/build
+Resolved 42 packages in 537ms
+Downloading aiohttp (1.7MiB)
+Downloading pygments (1.2MiB)
+ Downloaded pygments
+ Downloaded aiohttp
+Prepared 42 packages in 129ms
+Installed 42 packages in 30ms
+ + aiohappyeyeballs==2.7.1
+ + aiohttp==3.14.3
+ + aiosignal==1.4.0
+ + appdirs==1.4.4
+ + arrow==1.4.0
+ + async-timeout==5.0.1
+ + attrs==26.1.0
+ + binaryornot==0.6.0
+ + certifi==2026.7.22
+ + charset-normalizer==3.5.1
+ + click==8.5.0
+ + cookiecutter==2.7.1
+ + frozenlist==1.8.0
+ + giturlparse==0.15.0
+ + idna==3.20
+ + jinja2==3.1.6
+ + json-e==4.8.4
+ + markdown-it-py==4.2.0
+ + markupsafe==3.0.3
+ + mdurl==0.1.2
+ + mohawk==1.1.0
+ + mozilla-repo-urls==0.2.2
+ + msgspec==0.21.1
+ + multidict==6.9.0
+ + propcache==0.5.4
+ + pygments==2.21.0
+ + python-dateutil==2.9.0.post0
+ + python-slugify==9.1.0
+ + pyyaml==6.0.3
+ + redo==3.0.0
+ + requests==2.34.2
+ + rich==15.0.0
+ + six==1.17.0
+ + slugid==2.0.0
+ + taskcluster==110.0.0
+ + taskcluster-taskgraph==24.1.1
+ + taskcluster-urls==13.1.0
+ + text-unidecode==1.3
+ + tzdata==2026.4
+ + urllib3==2.8.0
+ + voluptuous==0.16.0
+ + yarl==1.25.1
+Creating local state directory: /home/builder/Straighter/build/.mozbuild/srcdirs/gecko-1a10f68dd163
+Creating the 'mach' site at /home/builder/Straighter/build/.mozbuild/srcdirs/gecko-1a10f68dd163/_virtualenvs/mach
+Creating the 'build' site at /home/builder/Straighter/build/.mozbuild/srcdirs/gecko-1a10f68dd163/_virtualenvs/build
