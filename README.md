@@ -1,75 +1,44 @@
-# IronFox
+# Straighter
 
 <div align="center">
 
-<img src="assets/ironfox.png"
-  alt="IronFox"
+<img src="tools/brand/straighter-logo.png"
+  alt="Straighter"
   height="200">
-
-</div>
-
-<div align="center">
-
-[<img src="assets/accrescent.png"
-  alt="Get it on Accrescent"
-  height="80">](https://accrescent.app/app/org.ironfoxoss.ironfox)
-[<img src="assets/f-droid.png"
-  alt="Get it on F-Droid"
-  height="80">](fdroidrepos://fdroid.ironfoxoss.org/fdroid/repo?fingerprint=C5E291B5A571F9C8CD9A9799C2C94E02EC9703948893F2CA756D67B94204F904)
-[<img src="assets/obtainium.png"
-  alt="Get it on Obtainium"
-  height="80">](obtainium://app/%7B%22id%22%3A%22org.ironfoxoss.ironfox%22%2C%22url%22%3A%22https%3A%2F%2Freleases.ironfoxoss.org%2Fironfox%2Freleases%2Fupdates.json%22%2C%22author%22%3A%22releases.ironfoxoss.org%22%2C%22name%22%3A%22App%22%2C%22preferredApkIndex%22%3A0%2C%22additionalSettings%22%3A%22%7B%5C%22intermediateLink%5C%22%3A%5B%5D%2C%5C%22customLinkFilterRegex%5C%22%3A%5C%22%5C%22%2C%5C%22filterByLinkText%5C%22%3Afalse%2C%5C%22matchLinksOutsideATags%5C%22%3Afalse%2C%5C%22skipSort%5C%22%3Afalse%2C%5C%22reverseSort%5C%22%3Afalse%2C%5C%22sortByLastLinkSegment%5C%22%3Afalse%2C%5C%22versionExtractWholePage%5C%22%3Atrue%2C%5C%22requestHeader%5C%22%3A%5B%7B%5C%22requestHeader%5C%22%3A%5C%22User-Agent%3A%20Mozilla%2F5.0%20(Linux%3B%20Android%2010%3B%20K)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F114.0.0.0%20Mobile%20Safari%2F537.36%5C%22%7D%5D%2C%5C%22defaultPseudoVersioningMethod%5C%22%3A%5C%22partialAPKHash%5C%22%2C%5C%22trackOnly%5C%22%3Afalse%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22%5C%5C%5C%22org%5C%5C%5C%5C.ironfoxoss%5C%5C%5C%5C.ironfox%5C%5C%5C%22%5C%5C%5C%5Cs*%3A%5C%5C%5C%5Cs*%5C%5C%5C%5C%7B.*%3F%5C%5C%5C%22version%5C%5C%5C%22%5C%5C%5C%5Cs*%3A%5C%5C%5C%5Cs*%5C%5C%5C%22(%5B%5E%5C%5C%5C%22%5D%2B)%5C%5C%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%221%5C%22%2C%5C%22versionDetection%5C%22%3Atrue%2C%5C%22useVersionCodeAsOSVersion%5C%22%3Afalse%2C%5C%22apkFilterRegEx%5C%22%3A%5C%22universal%5C%22%2C%5C%22invertAPKFilter%5C%22%3Afalse%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22appName%5C%22%3A%5C%22IronFox%5C%22%2C%5C%22appAuthor%5C%22%3A%5C%22IronFox%20OSS%5C%22%2C%5C%22shizukuPretendToBeGooglePlay%5C%22%3Afalse%2C%5C%22allowInsecure%5C%22%3Afalse%2C%5C%22exemptFromBackgroundUpdates%5C%22%3Afalse%2C%5C%22skipUpdateNotifications%5C%22%3Afalse%2C%5C%22about%5C%22%3A%5C%22Private%2C%20secure%2C%20user%20first%20web%20browser%20for%20Android.%5C%22%2C%5C%22refreshBeforeDownload%5C%22%3Atrue%7D%22%2C%22overrideSource%22%3A%22HTML%22%7D)
-
-</div>
-
-**<div align="center">F-Droid QR Code:</div>**
-
-<div align="center">
-
-[<img src="assets/f-droid_qr.png"
-  alt="Get it on F-Droid"
-  height="300">](fdroidrepos://fdroid.ironfoxoss.org/fdroid/repo?fingerprint=C5E291B5A571F9C8CD9A9799C2C94E02EC9703948893F2CA756D67B94204F904)
 
 </div>
 
 ---
 
-IronFox is a fork of [Divested Computing Group](https://divested.dev/)'s [Mull Browser](https://web.archive.org/web/20250113132510/https://divestos.org/pages/our_apps#mull), based on [Mozilla Firefox](https://www.firefox.com/). **Our goal is to continue the legacy of Mull by providing a free and open source, privacy and security-oriented web browser for daily use.**
+Straighter is a free and open source, privacy and security-oriented web browser for Android, built on [Mozilla Firefox](https://www.firefox.com/)'s engine (GeckoView).
 
-> [!TIP]
-> Find a bug? Encounter an annoying problem? Have a tip, idea, or suggestion you'd like to share? **Please file any issues, bug reports, and suggestions over at [our unified issue tracker](https://codeberg.org/ironfox-oss/bugs/issues)!**
+**Straighter is a fork of [IronFox](https://gitlab.com/ironfox-oss/IronFox)**, which is itself a fork of [Divested Computing Group](https://divested.dev/)'s [Mull Browser](https://web.archive.org/web/20250113132510/https://divestos.org/pages/our_apps#mull). It inherits IronFox's build system, hardening patches and default configuration, and would not exist without the work of those projects and their contributors. See the notices at the bottom of this page.
+
+> [!NOTE]
+> The app is called **Straighter** on your device. In app stores it is listed as **Straighter Browser**.
+
+> [!NOTE]
+> Straighter is under development and has no public release yet. Installation instructions and the signing-certificate fingerprint will be published here with the first release.
 
 > [!IMPORTANT]
->**⚠️ All users are HIGHLY recommended to take a look at our [documentation](https://ironfoxoss.org/docs/), ESPECIALLY the [Limitations](https://ironfoxoss.org/docs/limitations/) and [Frequently Asked Questions](https://ironfoxoss.org/docs/faq/) pages!**
+> Because Straighter inherits IronFox's privacy hardening, some sites may behave differently than in a stock browser. IronFox documents these trade-offs on its [Limitations](https://ironfoxoss.org/docs/limitations/) and [FAQ](https://ironfoxoss.org/docs/faq/) pages, which also apply here.
 
-> While IronFox's home is [GitLab](https://gitlab.com/ironfox-oss/IronFox), this repo is also mirrored to both [Codeberg](https://codeberg.org/ironfox-oss/IronFox) and [GitHub](https://github.com/ironfox-oss/IronFox).
-
-### Want to join the IronFox Community?
-
-We'd love to see you over on [Matrix](https://matrix.to/#/#ironfox:unredacted.org) _(Recommended)_ and [Discord](https://discord.gg/zbdzfRVyVh)!
-
-## App Installation
-
-For details and step-by-step instructions on how to install IronFox, see our [Download](https://ironfoxoss.org/download/) page.
+Found a bug or have a suggestion? Please open an issue at [github.com/idinnovate/Straighter/issues](https://github.com/idinnovate/Straighter/issues).
 
 ## App Verification
 
-**Package ID**: `org.ironfoxoss.ironfox`
+**Package ID**: `com.s9i.straighter`
 
-**Package ID** *(Nightly)*: `org.ironfoxoss.ironfox.nightly`
+**Package ID** *(Nightly)*: `com.s9i.straighter.nightly`
 
-**SHA-256 Hash of Signing Certificate**:
-
-```text
-C5:E2:91:B5:A5:71:F9:C8:CD:9A:97:99:C2:C9:4E:02:EC:97:03:94:88:93:F2:CA:75:6D:67:B9:42:04:F9:04
-```
+**SHA-256 Hash of Signing Certificate**: *to be published with the first release.*
 
 ## Building
 
-IronFox makes it easier (and faster) to build the project locally.
+Straighter uses IronFox's build system, which makes it easier (and faster) to build the project locally.
 For example, prebuilt versions of wasi-sdk sysroot and llvm-project are used instead of building them locally. ~~F-Droid builds still build those from source.~~
 
-**It is recommended to use the Docker image for building IronFox.**
+**It is recommended to use the Docker image for building Straighter.** (The image is published by the IronFox project; Straighter uses it unchanged.)
 
 ### Build with Docker
 
@@ -121,28 +90,28 @@ brew install git
 sudo apt install git
 ```
 
-After you've successfully installed `git`, the first thing you'll need to do is clone IronFox's source repository:
+After you've successfully installed `git`, the first thing you'll need to do is clone Straighter's source repository:
 
 *(`--depth=1` is specified below to reduce the size of the cloned repository, it can be removed if preferred)*
 
 ```sh
-git clone --depth=1 git@gitlab.com:ironfox-oss/IronFox.git IronFox
+git clone --depth=1 https://github.com/idinnovate/Straighter.git Straighter
 ```
 
-You should now navigate to the root of IronFox's source directory, and run the `bootstrap` script:
+You should now navigate to the root of Straighter's source directory, and run the `bootstrap` script:
 
-*(The `bootstrap` script will set-up and install dependencies required to build IronFox on your system)*
+*(The `bootstrap` script will set-up and install dependencies required to build Straighter on your system)*
 
 ```sh
-cd IronFox
+cd Straighter
 ./scripts/bootstrap.sh
 ```
 
 #### Get sources
 
-Still from the root of IronFox's source directory, you should now run the `get_sources` script to download the external sources required for building IronFox:
+Still from the root of Straighter's source directory, you should now run the `get_sources` script to download the external sources required for building Straighter:
 
-**NOTE**: If you need to fetch sources for a different version of a dependency than the version IronFox is currently using, you'll need to modify `scripts/versions.sh` **BEFORE** running the `get_sources` script.
+**NOTE**: If you need to fetch sources for a different version of a dependency than the version Straighter is currently using, you'll need to modify `scripts/versions.sh` **BEFORE** running the `get_sources` script.
 
 _This may take some time depending on your network speed..._
 
@@ -179,7 +148,7 @@ In addition to the `AAB`, the `bundle` target also produces APKs for each archit
 
 ### Linting
 
-IronFox is largely driven by shell scripts, which are checked with [`shellcheck`](https://www.shellcheck.net/) *(static analysis)* and [`shfmt`](https://github.com/mvdan/sh) *(formatting)*. These run automatically in CI *(the `lint-scripts` job)* and are enforced there — a lint failure stops the pipeline before any build starts.
+Straighter is largely driven by shell scripts, which are checked with [`shellcheck`](https://www.shellcheck.net/) *(static analysis)* and [`shfmt`](https://github.com/mvdan/sh) *(formatting)*. These run automatically in CI *(the `lint-scripts` job)* and are enforced there — a lint failure stops the pipeline before any build starts.
 
 `./scripts/get_sources.sh` installs both tools and enables a git pre-commit hook *(via `core.hooksPath`)* that lints your staged scripts before each commit. The hook is a convenience and can be bypassed with `git commit --no-verify`; CI remains the source of truth.
 
@@ -205,7 +174,7 @@ Linter configuration lives in `.shellcheckrc` *(checks)* and `.editorconfig` *(f
 
 ## Translation
 
-IronFox is translated using Weblate. Visit the [Weblate project](https://hosted.weblate.org/engage/ironfox/) to help with translations.
+Straighter's translations come from IronFox, which is translated using Weblate. To help with translations, visit [IronFox's Weblate project](https://hosted.weblate.org/engage/ironfox/).
 
 ## Licensing
 
@@ -227,10 +196,12 @@ Our current set of default wallpapers are taken from [Fennec F-Droid](https://gi
 
 Mozilla Firefox is a trademark of The Mozilla Foundation.
 
-This is not an officially supported Mozilla product. IronFox is in no way affiliated with Mozilla.
+This is not an officially supported Mozilla product. Straighter is in no way affiliated with Mozilla.
 
-IronFox is not sponsored or endorsed by Mozilla.
+Straighter is not sponsored or endorsed by Mozilla.
 
-IronFox is not associated with DivestOS, Divested Computing Group, or Mull in any manner.
+Straighter is a fork of IronFox. It is not affiliated with, sponsored by, or endorsed by IronFox OSS.
+
+Straighter is not associated with DivestOS, Divested Computing Group, or Mull in any manner.
 
 Firefox source code is available at [https://github.com/mozilla-firefox/firefox](https://github.com/mozilla-firefox/firefox).
