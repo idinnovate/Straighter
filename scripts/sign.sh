@@ -83,12 +83,24 @@ function sign_apk() {
     "${IRONFOX_MKDIR}" -p "${signed_apk_dir}"
   fi
 
+  # apksigner's own --ks-pass=file:/... / --key-pass=file:/... reading throws
+  # "java.io.IOException: ... end of file reached" and refuses to sign, reproduced even
+  # with a fresh throwaway keystore/password unrelated to this fork's key -- a bug/quirk
+  # in this apksigner build's file: password source, not anything about the password file
+  # itself. --ks-pass=env:/--key-pass=env: (apksigner's other documented, non-interactive
+  # password source) works correctly, so read the same password FILES straighter has
+  # always used and hand them to apksigner that way instead. Scoped to this one command
+  # only (bash's VAR=value prefix form), never exported, logged, or written anywhere.
+  local -r ks_pass="$(cat "${IRONFOX_ANDROID_KEYSTORE_PASS_FILE}")"
+  local -r key_pass="$(cat "${IRONFOX_ANDROID_KEYSTORE_KEY_PASS_FILE}")"
+
   echo_red_text "Signing APK: '${unsigned_apk}' (Output: '${signed_apk}')..."
-  "${IRONFOX_APKSIGNER}" sign \
+  IRONFOX_SIGN_KS_PASS="${ks_pass}" IRONFOX_SIGN_KEY_PASS="${key_pass}" \
+    "${IRONFOX_APKSIGNER}" sign \
     --ks="${IRONFOX_ANDROID_KEYSTORE}" \
-    --ks-pass="file:/${IRONFOX_ANDROID_KEYSTORE_PASS_FILE}" \
+    --ks-pass="env:IRONFOX_SIGN_KS_PASS" \
     --ks-key-alias="${IRONFOX_ANDROID_KEYSTORE_KEY_ALIAS}" \
-    --key-pass="file:/${IRONFOX_ANDROID_KEYSTORE_KEY_PASS_FILE}" \
+    --key-pass="env:IRONFOX_SIGN_KEY_PASS" \
     --out="${signed_apk}" \
     "${unsigned_apk}"
 
@@ -142,6 +154,12 @@ function sign_apkset() {
     "${IRONFOX_MKDIR}" -p "${apkset_dir}"
   fi
 
+  # NOTE: sign_apk() (above) had to move from --ks-pass=file:/... to env: because
+  # apksigner's file: password source was broken in the build environment (see the
+  # comment there). bundletool's build-apks --ks-pass may have the same bug -- it shares
+  # much of the same keystore-loading code -- but this path is not exercised by an
+  # arm64/nightly build and has not been tested. Verify this the first time a `bundle`
+  # build is actually run, before assuming it works.
   echo_red_text "Signing AAB: '${aab}' (Output: '${apkset}')..."
   "${IRONFOX_BUNDLETOOL}" build-apks \
     --bundle="${aab}" \
