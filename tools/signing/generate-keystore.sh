@@ -86,9 +86,11 @@ fi
 DNAME="CN=Straighter, O=${ORG}"
 [[ -n "${CC}" ]] && DNAME="${DNAME}, C=$(printf '%s' "${CC}" | tr '[:lower:]' '[:upper:]')"
 
-# The password goes into a file (mode 600), and keytool reads it from there, so it never
-# shows up in the process list. No trailing newline, so any tool can read it verbatim.
-printf '%s' "${PW}" > "${PASSFILE}"
+# The password goes into a file (mode 600), and keytool/apksigner read it from there, so
+# it never shows up in the process list. A trailing newline is required: apksigner's
+# `file:` password source throws "end of file reached" without one (it needs a line
+# terminator to know the read is complete), even though keytool accepts either form.
+printf '%s\n' "${PW}" > "${PASSFILE}"
 unset PW
 chmod 600 "${PASSFILE}"
 

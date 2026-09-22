@@ -87,7 +87,7 @@ newsign() {
   rm -rf "${S}"
   mkdir -p "${S}"
   echo fakejks > "${S}/straighter-release.jks"
-  printf '%s' "${SECRET}" > "${S}/keystore.pass"
+  printf '%s\n' "${SECRET}" > "${S}/keystore.pass"
   printf 'Owner: CN=Straighter\n\t SHA256: %s\n' "${FP}" > "${S}/signing-cert-fingerprints.txt"
   chmod 600 "${S}"/*
 }
@@ -167,6 +167,13 @@ echo "T9 missing password file"
 newrepo t9; newsign t9; rm "${S}/keystore.pass"; rc=$(drv t9 --release --sign "${S}" "${SB[@]}")
 ok "refused" "${rc}" 1
 ok "nothing was built" "$(has 'docker build')" no
+
+echo "T9b password file with no trailing newline (apksigner refuses to sign with one)"
+newrepo t9b; newsign t9b; printf '%s' "${SECRET}" > "${S}/keystore.pass"
+rc=$(drv t9b --release --sign "${S}" "${SB[@]}")
+ok "refused" "${rc}" 1
+ok "nothing was built" "$(has 'docker build')" no
+ok "says why" "$(outmatches t9b 'trailing newline')" 1
 
 echo "T10 with a Safe Browsing key file"
 newrepo t10; rc=$(drv t10 "${SB[@]}")

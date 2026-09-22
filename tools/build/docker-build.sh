@@ -133,6 +133,14 @@ if [[ -n "${SIGN_DIR}" ]]; then
   for f in "${KEYSTORE_NAME}" "${PASS_NAME}"; do
     case "$(mode_of "${SIGN_DIR}/${f}")" in 600 | 400) ;; *) echo "warning: ${SIGN_DIR}/${f} should be mode 600 (chmod 600 it)" >&2 ;; esac
   done
+  # apksigner's `file:` password source throws "end of file reached" and refuses to sign
+  # if the file has no trailing newline, even though keytool (used by the check below)
+  # accepts either form — so that check alone does not catch this. Confirmed the hard way:
+  # a full build completed, then failed at the sign step on exactly this.
+  case "$(tail -c 1 "${SIGN_DIR}/${PASS_NAME}" | od -An -tx1 | tr -d ' \n')" in
+    0a) ;;
+    *) die "${SIGN_DIR}/${PASS_NAME} has no trailing newline, which apksigner's signer requires (keytool does not, so the key can still 'open' while this is wrong). Fix it with: printf '\\n' >> ${SIGN_DIR}/${PASS_NAME}" ;;
+  esac
   if [[ -z "${EXPECT}" ]]; then
     EXPECT="$(grep -o 'SHA256: .*' "${SIGN_DIR}/${FP_NAME}" | head -1 | sed 's/SHA256: //')"
   fi
