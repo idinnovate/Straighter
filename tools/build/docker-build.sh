@@ -166,7 +166,8 @@ fi
 dexec() { "${DOCKER[@]}" exec "${ENVS[@]}" "${CONTAINER}" bash -c "$1"; }
 
 # Newest bundled JDK: the build downloads jdk-17/21/25 into external/ (get_sources).
-FIND_JDK='JH=$(ls -d /app/external/jdk-* 2>/dev/null | sort -V | tail -1); export JAVA_HOME="$JH"'
+# apksigner's own script execs `java` via PATH, not JAVA_HOME, so both must be set.
+FIND_JDK='JH=$(ls -d /app/external/jdk-* 2>/dev/null | sort -V | tail -1); export JAVA_HOME="$JH"; export PATH="$JH/bin:$PATH"'
 
 run_stage() {
   local name="$1"
