@@ -2,7 +2,7 @@
 <resources>
     <string name="restart_required_summary">Ao alterar esta configuração, o seu navegador será reiniciado</string>
     <string name="unsupported_summary">Esta configuração não é recomendada ou suportada. Prossiga com cautela.</string>
-    <string name="if_preferences">Configurações do IronFox</string>
+    <string name="if_preferences">Configurações do Straighter</string>
     <string name="if_preferences_misc">Outras</string>
     <string name="if_preferences_privacy">Privacidade</string>
     <string name="if_preferences_privacy_security">Privacidade e segurança</string>
@@ -49,7 +49,7 @@
     <string name="preference_jit_trusted_principals_enabled">Ativar a compilação Just-In-Time do JavaScript para extensões</string>
     <string name="preference_jit_trusted_principals_enabled_summary">Quando o JIT está desativado, reativa o JIT para as extensões - Ao alterar esta configuração, o seu navegador será reiniciado</string>
     <string name="preference_media_autoplay_title">Reprodução automática de média</string>
-    <string name="preference_media_autoplay_description">Controlo como o IronFox bloqueia a reprodução automática de média.</string>
+    <string name="preference_media_autoplay_description">Controlo como o Straighter bloqueia a reprodução automática de média.</string>
     <string name="preference_autoplay_policy_sticky">Adesivo</string>
     <string name="preference_autoplay_policy_transient">Transitória (Padrão)</string>
     <string name="preference_autoplay_policy_click_to_play">Clicar para reproduzir</string>
@@ -61,5 +61,5 @@
     <string name="preference_webgl_disabled">Desativar WebGL</string>
     <string name="preference_fpp_overrides_ironfox_webgl_enabled">Ativar sobreposições do IronFox para WebGL</string>
     <string name="preference_fpp_overrides_ironfox_webgl_summary">Quando o WebGL está desativado, reativa ele para alguns sites para reduzir quebra - Ao alterar esta configuração, o seu navegador será reiniciado</string>
-    <string name="extension_failed_to_install_xpinstall_disabled_error">A instalação de extensões está desativada no momento. Se desejar, aos custos da segurança, pode ativá-la a ir às Configurações -&gt; IronFox -&gt; Configurações do IronFox -&gt; Segurança -&gt; Permitir instalação de extensões.</string>
+    <string name="extension_failed_to_install_xpinstall_disabled_error">A instalação de extensões está desativada no momento. Se desejar, aos custos da segurança, pode ativá-la a ir às Configurações -&gt; Straighter -&gt; Configurações do Straighter -&gt; Segurança -&gt; Permitir instalação de extensões.</string>
 </resources>

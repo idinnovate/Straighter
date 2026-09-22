@@ -2,7 +2,7 @@
 <resources>
     <string name="restart_required_summary">Việc thay đổi cài đặt này sẽ làm trình duyệt của bạn khởi động lại</string>
     <string name="unsupported_summary">Cài đặt này KHÔNG được khuyến nghị lẫn hỗ trợ. Hãy tiến hành một cách thận trọng.</string>
-    <string name="if_preferences">Cài đặt IronFox</string>
+    <string name="if_preferences">Cài đặt Straighter</string>
     <string name="if_preferences_misc">Khác</string>
     <string name="if_preferences_privacy">Quyền riêng tư</string>
     <string name="if_preferences_privacy_security">Quyền riêng tư và bảo mật</string>
@@ -28,7 +28,7 @@
     <string name="preference_jit_trusted_principals_enabled">Bật tính năng biên dịch tức thời (JIT) của JavaScript cho các tiện ích mở rộng</string>
     <string name="preference_jit_trusted_principals_enabled_summary">Khi JIT bị tắt, hãy bật lại JIT cho các tiện ích mở rộng - Việc thay đổi cài đặt này sẽ khởi động lại trình duyệt của bạn</string>
     <string name="preference_media_autoplay_title">Tự động phát phương tiện</string>
-    <string name="preference_media_autoplay_description">Kiểm soát cách IronFox chặn tính năng tự động phát phương tiện.</string>
+    <string name="preference_media_autoplay_description">Kiểm soát cách Straighter chặn tính năng tự động phát phương tiện.</string>
     <string name="preference_autoplay_policy_sticky">Cố định</string>
     <string name="preference_autoplay_policy_transient">Tạm thời (Mặc định)</string>
     <string name="preference_autoplay_policy_click_to_play">Nhấp để phát</string>
@@ -57,7 +57,7 @@
     <string name="preference_fpp_overrides_ironfox_webgl_enabled">Bật tính năng ghi đè WebGL từ IronFox</string>
     <string name="preference_fpp_overrides_ironfox_webgl_summary">Khi WebGL bị tắt, trình duyệt sẽ tự động bật lại WebGL cho một số trang web nhất định để giảm thiểu sự cố - Việc thay đổi cài đặt này sẽ khiến trình duyệt của bạn khởi động lại</string>
     <string name="preference_webrtc_enabled">Bật WebRTC</string>
-    <string name="extension_failed_to_install_xpinstall_disabled_error">Hiện tại, tính năng cài đặt tiện ích mở rộng đã bị vô hiệu hóa. Nếu muốn, bạn có thể kích hoạt tính năng này bằng cách truy cập vào Cài đặt -&gt; IronFox -&gt; Cài đặt IronFox -&gt; Bảo mật -&gt; Cho phép cài đặt tiện ích mở rộng, tuy nhiên điều này sẽ ảnh hưởng đến mức độ bảo mật.</string>
+    <string name="extension_failed_to_install_xpinstall_disabled_error">Hiện tại, tính năng cài đặt tiện ích mở rộng đã bị vô hiệu hóa. Nếu muốn, bạn có thể kích hoạt tính năng này bằng cách truy cập vào Cài đặt -&gt; Straighter -&gt; Cài đặt Straighter -&gt; Bảo mật -&gt; Cho phép cài đặt tiện ích mở rộng, tuy nhiên điều này sẽ ảnh hưởng đến mức độ bảo mật.</string>
     <string name="preference_xpinstall_enabled">Cho phép cài đặt các tiện ích mở rộng</string>
     <string name="ironfox_onboarding_state_installing_ublock">Đang cài đặt uBlock Origin…</string>
     <string name="ironfox_onboarding_state_installing_ublock_error">Có lỗi xảy ra khi cài đặt uBlock Origin: %1$s</string>

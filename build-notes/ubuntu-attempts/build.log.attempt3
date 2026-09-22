@@ -1,0 +1,275 @@
+=== [2026-09-20T15:38:49Z] START build_arm64 ===
+[31mERROR: Environment variable has not been specified: 'IRONFOX_SB_GAPI_KEY_FILE'![0m
+[31mIRONFOX_SB_GAPI_KEY_FILE environment variable has not been specified! Safe Browsing will not be supported in this build.[0m
+If this is unexpected, please ensure that IRONFOX_SB_GAPI_KEY_FILE is set to a valid file path.
+
+[31mPreparing your build environment...[0m
+[31mSetting build environment variables...[0m
+[32mSUCCESS: Set build environment variables[0m
+[31mPreparing Gecko...[0m
+[32mSUCCESS: Prepared Gecko[0m
+[31mPreparing Application Services...[0m
+[32mSUCCESS: Prepared Application Services[0m
+[31mPreparing Fenix...[0m
+[32mSUCCESS: Prepared Fenix[0m
+[31mPreparing Glean...[0m
+[32mSUCCESS: Prepared Glean[0m
+[31mPreparing UnifiedPush-AC...[0m
+[32mSUCCESS: Prepared UnifiedPush-AC[0m
+[32mSUCCESS: Prepared build environment[0m
+[31mBuilding Phoenix...[0m
+~/Straighter/external/phoenix ~/Straighter
+~/Straighter/external/phoenix ~/Straighter/external/phoenix
+~/Straighter/external/phoenix
+~/Straighter
+[32mSUCCESS: Built Phoenix[0m
+[31mBuilding microG...[0m
+~/Straighter/external/gmscore ~/Straighter
+CACHEDIR set to /home/builder/Straighter/build/gradle/cache
+Remote gradle-transparency-log not changed, reusing cache
+Update checksum from gradle-transparency-log
+Found 8.13 via distributionUrl
+Running /home/builder/Straighter/build/gradle/cache/versions/8.13/bin/gradle -Dhttps.protocols=TLSv1.3,TLSv1.2 -Dmaven.repo.local=/home/builder/Straighter/build/.m2/repository -Dorg.gradle.caching=false -Dorg.gradle.configuration-cache=false -Dorg.gradle.configureondemand=true -Dorg.gradle.console=verbose -Dorg.gradle.daemon=false -Dorg.gradle.debug=false -Dorg.gradle.java.installations.auto-detect=false -Dorg.gradle.java.installations.auto-download=false --no-build-cache --no-configuration-cache --no-daemon -Dorg.gradle.java.home=/home/builder/Straighter/external/jdk-21 -Dorg.gradle.java.installations.paths=/home/builder/Straighter/external/jdk-25 -x javaDocReleaseGeneration :play-services-base:publishToMavenLocal :play-services-basement:publishToMavenLocal :play-services-fido:publishToMavenLocal :play-services-tasks:publishToMavenLocal
+NOTE: Picked up JDK_JAVA_OPTIONS: -Dhttps.protocols=TLSv1.3,TLSv1.2
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.protocols=TLSv1.3,TLSv1.2
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/home/builder/Straighter/build/gradle/cache/versions/8.13/lib/native-platform-0.22-milestone-28.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.13/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+
+
+[2A[1B[1m> Starting Daemon[m[17D[1B[1A> IDLE[0K[6D[1B[2ADaemon will be stopped at the end of the build 
+[1B[0K
+[2A[0K[1B> IDLE[6D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [13ms][m[38D[2B[2AConfiguration on demand is an incubating feature.[0K
+[1B[0K
+[2A[1m<[0;1m-------------> 0% INITIALIZING [113ms][m[39D[1B> IDLE[6D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [213ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [313ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [413ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [513ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [613ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [713ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [813ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [913ms][m[39D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [1s][m[0K[36D[2B[1A[1m> Evaluating settings[m[21D[1B[2A[1m<[0;1m-------------> 0% INITIALIZING [2s][m[36D[2B[2A[1m<[0;1m-------------> 0% INITIALIZING [3s][m[36D[2B[2A[1m<[0;1m-------------> 0% CONFIGURING [3s][m[0K[35D[1B[1m> Loading projects[m[0K[18D[1B[1A[1m> root project[m[0K[14D[1B[2A[1m<[0;1m-------------> 0% CONFIGURING [4s][m[35D[2B[1A[1m> root project > Resolve dependencies of classpath[m[50D[1B[2A[1m<[0;1m-------------> 0% CONFIGURING [5s][m[35D[1B[1m> root project > Resolve dependencies of classpath > compose-compiler-gradle-pl[m[79D[1B[2A[1m<[0;1m-------------> 0% CONFIGURING [6s][m[35D[2B[1A[1m> root project > Resolve dependencies of classpath[m[0K[50D[1B[2A[1m<[0;1m-------------> 0% CONFIGURING [7s][m[35D[2B[1A[1m> root project[m[0K[14D[1B[1A[1m> root project > Resolve files of configuration 'classpath' > Resolve files of [m[79D[1B[2A[1m<[0;1m-------------> 0% CONFIGURING [8s][m[35D[2B[1A[1m> root project > Resolve files of configuration 'classpath'[m[0K[59D[1B[2A[1m<[0;1m-------------> 0% CONFIGURING [9s][m[35D[2B[1A[1m> root project[m[0K[14D[1B[2A[1m<[0;1m-------------> 0% CONFIGURING [10s][m[36D[2B[2A[0K
+[1m> Configure project :[m[0K
+Starting build for GMS version v0.0.0.252432 (252432000)...
+[0K
+[0K
+[2A[1m<[0;1m-------------> 0% CONFIGURING [10s][m[36D[1B[1m> root project[m[14D[1B[2A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [10s][m[37D[1B[1m> :play-services-base[m[21D[1B[2A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [11s][m[37D[2B[2A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [12s][m[37D[2B[2A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [13s][m[37D[2B[2A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [14s][m[37D[2B[2A[1m<[0;32;1m==[0;39;1m-----------> 16% CONFIGURING [15s][m[37D[2B[2A[1m<[0;32;1m====[0;39;1m---------> 33% CONFIGURING [15s][m[37D[1B[1m> :play-services-basement[m[25D[1B[2A[1m<[0;32;1m======[0;39;1m-------> 50% CONFIGURING [15s][m[37D[1B[1m> :play-services-fido[m[0K[21D[1B[2A[1m<[0;32;1m========[0;39;1m-----> 66% CONFIGURING [15s][m[37D[1B[1m> :play-services-tasks[m[22D[1B[2A[1m<[0;32;1m==========[0;39;1m---> 83% CONFIGURING [15s][m[37D[1B> IDLE[0K[6D[1B[2A[1m<[0;32;1m==========[0;39;1m---> 83% CONFIGURING [16s][m[37D[2B[2A[1m<[0;32;1m==========[0;39;1m---> 83% CONFIGURING [17s][m[37D[2B[1A[1m> :safe-parcel-processor[m[24D[1B[2A[1m<[0;32;1m==========[0;39;1m---> 83% CONFIGURING [18s][m[37D[2B[2A[1m<[0;32;1m==========[0;39;1m---> 83% CONFIGURING [19s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [19s][m[38D[1B> IDLE[0K[6D[1B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [20s][m[38D[2B[2A[0K
+[1m> Task :play-services-base:preBuild[m[33m UP-TO-DATE[39m[0K
+[0K
+[0K
+[2A[1m<[0;1m-------------> 0% EXECUTING [20s][m[34D[1B> IDLE[6D[1B[2A[1m> Task :play-services-base:preReleaseBuild[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-basement:preBuild[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-basement:preReleaseBuild[m[33m UP-TO-DATE[39m
+[0K
+[0K
+[2A[1m<[0;1m-------------> 2% EXECUTING [20s][m[34D[1B[1m> :play-services-basement:writeReleaseAarMetadata[m[49D[1B[2A[1m> Task :play-services-basement:writeReleaseAarMetadata[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-tasks:preBuild[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-tasks:preReleaseBuild[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-tasks:writeReleaseAarMetadata[m[33m UP-TO-DATE[39m
+[0K
+[0K
+[2A[1m<[0;1m-------------> 4% EXECUTING [20s][m[34D[1B[1m> :play-services-base:checkReleaseAarMetadata > Resolve dependencies of :play-s[m[79D[1B[2A[1m> Task :play-services-base:checkReleaseAarMetadata[m[33m UP-TO-DATE[39m[0K
+[1B[0K
+[2A[1m<[0;1m-------------> 5% EXECUTING [20s][m[0K[34D[1B[1m> :play-services-basement:compileReleaseAidl[m[44D[1B[1A[1m> :play-services-basement:compileReleaseAidl > Resolve files of configuration '[m[79D[1B[2A[1m> Task :play-services-basement:compileReleaseAidl[m[33m UP-TO-DATE[39m[0K
+[1B[0K
+[2A[1m<[0;1m-------------> 6% EXECUTING [20s][m[0K[34D[1B[1m> :play-services-base:compileReleaseAidl > Resolve files of configuration ':pla[m[79D[1B[2A[1m> Task :play-services-base:compileReleaseAidl[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-base:mergeReleaseJniLibFolders[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-base:mergeReleaseNativeLibs[m[33m NO-SOURCE[39m
+[1m> Task :play-services-base:stripReleaseDebugSymbols[m[33m NO-SOURCE[39m
+[1m> Task :play-services-base:copyReleaseJniLibsProjectAndLocalJars[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-base:generateReleaseResValues[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-base:extractDeepLinksForAarRelease[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-base:generateReleaseResources[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-base:packageReleaseResources[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-base:processReleaseNavigationResources[m[33m UP-TO-DATE[39m
+[0K
+[0K
+[2A[1m<[0;32;1m=[0;39;1m------------> 12% EXECUTING [20s][m[35D[1B[1m> :play-services-base:parseReleaseLocalResources > Resolve dependencies of :pla[m[79D[1B[2A[1m> Task :play-services-base:parseReleaseLocalResources[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-base:generateReleaseRFile[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-basement:generateReleaseBuildConfig[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-basement:generateReleaseResValues[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-basement:generateReleaseResources[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-basement:packageReleaseResources[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-basement:processReleaseNavigationResources[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-basement:parseReleaseLocalResources[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-basement:generateReleaseRFile[m[33m UP-TO-DATE[39m
+[1m> Task :safe-parcel-processor:checkKotlinGradlePluginConfigurationErrors[m[33m SKIPPED[39m
+[0K
+[0K
+[2A[1m<[0;32;1m==[0;39;1m-----------> 18% EXECUTING [21s][m[35D[1B[1m> :safe-parcel-processor:compileKotlin[m[38D[1B[2A[1m> Task :safe-parcel-processor:compileKotlin[m[33m UP-TO-DATE[39m[0K
+[1m> Task :safe-parcel-processor:compileJava[m[33m NO-SOURCE[39m[0K
+[0K
+[0K
+[2A[1m<[0;32;1m==[0;39;1m-----------> 19% EXECUTING [21s][m[35D[1B[1m> :safe-parcel-processor:processResources[m[41D[1B[2A[1m> Task :safe-parcel-processor:processResources[m[33m UP-TO-DATE[39m[0K
+[1m> Task :safe-parcel-processor:classes[m[33m UP-TO-DATE[39m[0K
+[1m> Task :safe-parcel-processor:jar[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-basement:javaPreCompileRelease[m[33m UP-TO-DATE[39m
+[0K
+[0K
+[2A[1m<[0;32;1m==[0;39;1m-----------> 22% EXECUTING [21s][m[35D[1B[1m> :play-services-basement:compileReleaseJavaWithJavac > Resolve files of config[m[79D[1B[2A[1m> Task :play-services-basement:compileReleaseJavaWithJavac[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-basement:bundleLibCompileToJarRelease[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-tasks:generateReleaseResValues[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-tasks:generateReleaseResources[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-tasks:packageReleaseResources[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-tasks:processReleaseNavigationResources[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-tasks:parseReleaseLocalResources[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-tasks:generateReleaseRFile[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-tasks:javaPreCompileRelease[m[33m UP-TO-DATE[39m
+[0K
+[0K
+[2A[1m<[0;32;1m===[0;39;1m----------> 27% EXECUTING [21s][m[35D[1B[1m> :play-services-tasks:compileReleaseJavaWithJavac[m[50D[1B[2A[1m> Task :play-services-tasks:compileReleaseJavaWithJavac[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-tasks:bundleLibCompileToJarRelease[m[33m UP-TO-DATE[39m[0K
+[0K
+[0K
+[2A[1m<[0;32;1m===[0;39;1m----------> 29% EXECUTING [21s][m[35D[1B[1m> :play-services-base:extractReleaseAnnotations[m[47D[1B[2A[1m> Task :play-services-base:extractReleaseAnnotations[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-base:mergeReleaseShaders[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-base:compileReleaseShaders[m[33m NO-SOURCE[39m
+[1m> Task :play-services-base:generateReleaseAssets[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-base:mergeReleaseAssets[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-base:javaPreCompileRelease[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-base:compileReleaseJavaWithJavac[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-base:mergeReleaseGeneratedProguardFiles[m[33m UP-TO-DATE[39m
+[0K
+[0K
+[2A[1m<[0;32;1m====[0;39;1m---------> 34% EXECUTING [21s][m[35D[1B[1m> :play-services-base:mergeReleaseConsumerProguardFiles[m[55D[1B[2A[1m> Task :play-services-base:mergeReleaseConsumerProguardFiles[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-base:prepareLintJarForPublish[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-base:prepareReleaseArtProfile[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-base:processReleaseManifest[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-base:processReleaseJavaRes[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-base:mergeReleaseJavaResource[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-base:syncReleaseLibJars[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-base:writeReleaseAarMetadata[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-base:bundleReleaseAar[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-base:javaDocReleaseJar[m[33m UP-TO-DATE[39m
+[0K
+[0K
+[2A[1m<[0;32;1m=====[0;39;1m--------> 40% EXECUTING [21s][m[35D[1B[1m> :play-services-base:sourceReleaseJar[m[38D[1B[2A[1m> Task :play-services-base:sourceReleaseJar[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-base:generateMetadataFileForReleasePublication[m[0K
+[0K
+[0K
+[2A[1m<[0;32;1m=====[0;39;1m--------> 41% EXECUTING [21s][m[35D[1B> IDLE[6D[1B[2A[1m> Task :play-services-base:generatePomFileForReleasePublication[m[0K
+[1B[0K
+[2A[1m<[0;32;1m=====[0;39;1m--------> 42% EXECUTING [21s][m[35D[1B[1m> :play-services-base:publishReleasePublicationToMavenLocal[m[59D[1B[2A[1m> Task :play-services-base:publishReleasePublicationToMavenLocal[m[0K
+[1m> Task :play-services-base:publishToMavenLocal[m[0K
+[1m> Task :play-services-basement:checkReleaseAarMetadata[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-basement:mergeReleaseJniLibFolders[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-basement:mergeReleaseNativeLibs[m[33m NO-SOURCE[39m
+[1m> Task :play-services-basement:stripReleaseDebugSymbols[m[33m NO-SOURCE[39m
+[1m> Task :play-services-basement:copyReleaseJniLibsProjectAndLocalJars[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-basement:extractDeepLinksForAarRelease[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-basement:extractReleaseAnnotations[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-basement:mergeReleaseShaders[m[33m UP-TO-DATE[39m
+[0K
+[0K
+[2A[1m<[0;32;1m======[0;39;1m-------> 48% EXECUTING [21s][m[35D[1B[1m> :play-services-basement:compileReleaseShaders[m[47D[1B[2A[1m> Task :play-services-basement:compileReleaseShaders[m[33m NO-SOURCE[39m[0K
+[1m> Task :play-services-basement:generateReleaseAssets[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-basement:mergeReleaseAssets[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-basement:mergeReleaseGeneratedProguardFiles[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-basement:mergeReleaseConsumerProguardFiles[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-basement:prepareLintJarForPublish[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-basement:prepareReleaseArtProfile[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-basement:processReleaseManifest[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-basement:processReleaseJavaRes[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-basement:mergeReleaseJavaResource[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-basement:syncReleaseLibJars[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-basement:bundleReleaseAar[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-basement:javaDocReleaseJar[m[33m UP-TO-DATE[39m
+[0K
+[0K
+[2A[1m<[0;32;1m=======[0;39;1m------> 56% EXECUTING [22s][m[35D[1B[1m> :play-services-basement:sourceReleaseJar[m[42D[1B[2A[1m> Task :play-services-basement:sourceReleaseJar[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-basement:generateMetadataFileForReleasePublication[m[0K
+[1m> Task :play-services-basement:generatePomFileForReleasePublication[m
+[1m> Task :play-services-basement:publishReleasePublicationToMavenLocal[m
+[1m> Task :play-services-basement:publishToMavenLocal[m
+[1m> Task :play-services-fido:preBuild[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-fido:preReleaseBuild[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-fido:checkReleaseAarMetadata[m[33m UP-TO-DATE[39m
+[0K
+[0K
+[2A[1m<[0;32;1m=======[0;39;1m------> 61% EXECUTING [22s][m[35D[1B[1m> :play-services-fido:compileReleaseAidl > Resolve dependencies of :play-servic[m[79D[1B[2A[1m> Task :play-services-fido:compileReleaseAidl[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-fido:mergeReleaseJniLibFolders[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-fido:mergeReleaseNativeLibs[m[33m NO-SOURCE[39m
+[1m> Task :play-services-fido:stripReleaseDebugSymbols[m[33m NO-SOURCE[39m
+[1m> Task :play-services-fido:copyReleaseJniLibsProjectAndLocalJars[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-fido:generateReleaseResValues[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-fido:extractDeepLinksForAarRelease[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-base:bundleLibCompileToJarRelease[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-fido:generateReleaseResources[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-fido:packageReleaseResources[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-fido:processReleaseNavigationResources[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-fido:parseReleaseLocalResources[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-fido:generateReleaseRFile[m[33m UP-TO-DATE[39m
+[0K
+[0K
+[2A[1m<[0;32;1m=========[0;39;1m----> 69% EXECUTING [22s][m[35D[1B[1m> :play-services-fido:extractReleaseAnnotations[m[47D[1B[2A[1m> Task :play-services-fido:extractReleaseAnnotations[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-fido:mergeReleaseShaders[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-fido:compileReleaseShaders[m[33m NO-SOURCE[39m
+[1m> Task :play-services-fido:generateReleaseAssets[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-fido:mergeReleaseAssets[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-fido:javaPreCompileRelease[m[33m UP-TO-DATE[39m
+[0K
+[0K
+[2A[1m<[0;32;1m=========[0;39;1m----> 73% EXECUTING [22s][m[35D[1B[1m> :play-services-fido:compileReleaseJavaWithJavac[m[49D[1B[2A[1m> Task :play-services-fido:compileReleaseJavaWithJavac[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-fido:mergeReleaseGeneratedProguardFiles[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-fido:mergeReleaseConsumerProguardFiles[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-fido:prepareLintJarForPublish[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-fido:prepareReleaseArtProfile[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-fido:processReleaseManifest[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-fido:processReleaseJavaRes[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-fido:mergeReleaseJavaResource[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-fido:syncReleaseLibJars[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-fido:writeReleaseAarMetadata[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-fido:bundleReleaseAar[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-fido:javaDocReleaseJar[m[33m UP-TO-DATE[39m
+[0K
+[0K
+[2A[1m<[0;32;1m==========[0;39;1m---> 80% EXECUTING [22s][m[35D[1B[1m> :play-services-fido:sourceReleaseJar[m[38D[1B[2A[1m> Task :play-services-fido:sourceReleaseJar[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-fido:generateMetadataFileForReleasePublication[m[0K
+[1m> Task :play-services-fido:generatePomFileForReleasePublication[m
+[1m> Task :play-services-fido:publishReleasePublicationToMavenLocal[m
+[1m> Task :play-services-fido:publishToMavenLocal[m
+[1m> Task :play-services-tasks:checkReleaseAarMetadata[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-tasks:mergeReleaseJniLibFolders[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-tasks:mergeReleaseNativeLibs[m[33m NO-SOURCE[39m
+[1m> Task :play-services-tasks:stripReleaseDebugSymbols[m[33m NO-SOURCE[39m
+[1m> Task :play-services-tasks:copyReleaseJniLibsProjectAndLocalJars[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-tasks:extractDeepLinksForAarRelease[m[33m UP-TO-DATE[39m
+[0K
+[0K
+[2A[1m<[0;32;1m===========[0;39;1m--> 87% EXECUTING [22s][m[35D[1B[1m> :play-services-tasks:extractReleaseAnnotations > Resolve dependencies of :pla[m[79D[1B[2A[1m> Task :play-services-tasks:extractReleaseAnnotations[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-tasks:mergeReleaseShaders[m[33m UP-TO-DATE[39m[0K
+[1m> Task :play-services-tasks:compileReleaseShaders[m[33m NO-SOURCE[39m
+[1m> Task :play-services-tasks:generateReleaseAssets[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-tasks:mergeReleaseAssets[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-tasks:mergeReleaseGeneratedProguardFiles[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-tasks:mergeReleaseConsumerProguardFiles[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-tasks:prepareLintJarForPublish[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-tasks:prepareReleaseArtProfile[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-tasks:processReleaseManifest[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-tasks:processReleaseJavaRes[m[33m NO-SOURCE[39m
+[1m> Task :play-services-tasks:mergeReleaseJavaResource[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-tasks:syncReleaseLibJars[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-tasks:bundleReleaseAar[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-tasks:javaDocReleaseJar[m[33m UP-TO-DATE[39m
+[1m> Task :play-services-tasks:sourceReleaseJar[m[33m UP-TO-DATE[39m
+[0K
+[0K
+[2A[1m<[0;32;1m============[0;39;1m-> 97% EXECUTING [22s][m[35D[1B[1m> :play-services-tasks:generateMetadataFileForReleasePublication[m[64D[1B[2A[1m> Task :play-services-tasks:generateMetadataFileForReleasePublication[m[0K
+[1m> Task :play-services-tasks:generatePomFileForReleasePublication[m[0K
+[1m> Task :play-services-tasks:publishReleasePublicationToMavenLocal[m
+[1m> Task :play-services-tasks:publishToMavenLocal[m
+
+[Incubating] Problems report is available at: file:///home/builder/Straighter/external/gmscore/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+[32;1mBUILD SUCCESSFUL[0;39m in 26s
+[0K
+[0K
+[2A[1m<[0;32;1m=============[0;39;1m> 100% EXECUTING [22s][m[36D[1B> IDLE[6D[1B[2A129 actionable tasks: 12 executed, 117 up-to-date[0K
+[1B[0K
+[2A[1m<[0;1m-------------> 0% WAITING[m[26D[1B> IDLE[6D[1BWarning: SDK processing. This version only understands SDK XML versions up to 3 but an SDK XML file of version 4 was encountered. This can happen if you use versions of Android Studio and the command-line tools that were released at different times.
+[2A[2K[1B[2K[1A~/Straighter
+[32mSUCCESS: Built microG[0m
+~/Straighter/external/gecko ~/Straighter
+[31mBuilding Gecko (ARM64)...[0m

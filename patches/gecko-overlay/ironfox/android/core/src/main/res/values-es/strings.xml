@@ -2,7 +2,7 @@
 <resources>
     <string name="restart_required_summary">Cambiar este ajuste reiniciará el navegador</string>
     <string name="unsupported_summary">Este ajuste NO es recomendado ni soportado. Proceda con precaución.</string>
-    <string name="if_preferences">Ajustes de IronFox</string>
+    <string name="if_preferences">Ajustes de Straighter</string>
     <string name="if_preferences_misc">Misceláneos</string>
     <string name="if_preferences_privacy">Privacidad</string>
     <string name="if_preferences_privacy_security">Privacidad y seguridad</string>
@@ -41,7 +41,7 @@
     <string name="ironfox_onboarding_state_installing_ublock_error">Ocurrió un error al instalar uBlock Origin: %1$s</string>
     <string name="ironfox_retry">Reintentar</string>
     <string name="preference_translations_enabled">Habilitar Traducciones de Firefox</string>
-    <string name="extension_failed_to_install_xpinstall_disabled_error">Instalación de extensiones actualmente desactivada. Si lo deseas, a costa de seguridad, puedes habilitarla navegando a Ajustes -&gt; IronFox -&gt; Ajustes de IronFox -&gt; Seguridad -&gt; Permitir instalación de extensiones.</string>
+    <string name="extension_failed_to_install_xpinstall_disabled_error">Instalación de extensiones actualmente desactivada. Si lo deseas, a costa de seguridad, puedes habilitarla navegando a Ajustes -&gt; Straighter -&gt; Ajustes de Straighter -&gt; Seguridad -&gt; Permitir instalación de extensiones.</string>
     <string name="preference_jit_trusted_principals_enabled">Habilita la Compilación Just-in-Time (JIT) de JavaScript para extensiones</string>
     <string name="preference_jit_trusted_principals_enabled_summary">Cuando JIT está deshabilitado, JIT se habilita para extensiones - Cambiar esta configuración reiniciará el navegador</string>
     <string name="preference_fpp_overrides_ironfox_enabled">Habilita las excepciones de protección contra el fingerprinting de IronFox</string>
@@ -56,7 +56,7 @@
     <string name="preference_fpp_overrides_ironfox_webgl_summary">Cuando WebGL está deshabilitado, se vuelve a habilitar por defecto para ciertos sitios web con el fin de reducir errores – Cambiar esta configuración reiniciará el navegador</string>
     <string name="preference_webgl_disabled">Deshabilitar WebGL</string>
     <string name="preference_media_autoplay_title">Reproducción automática de medios</string>
-    <string name="preference_media_autoplay_description">Controla cómo IronFox bloquea la reproducción automática de medios.</string>
+    <string name="preference_media_autoplay_description">Controla cómo Straighter bloquea la reproducción automática de medios.</string>
     <string name="preference_autoplay_policy_sticky">Fijo</string>
     <string name="preference_autoplay_policy_transient">Transitorio (Predeterminado)</string>
     <string name="preference_autoplay_policy_click_to_play">Clic-para-reproducir</string>

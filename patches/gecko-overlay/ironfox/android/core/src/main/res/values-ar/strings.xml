@@ -2,7 +2,7 @@
 <resources>
     <string name="restart_required_summary">سيؤدي تغيير هذا الإعداد إلى إعادة تشغيل المتصفح</string>
     <string name="unsupported_summary">هذا الإعداد غير موصى به بتاتًا وغير مدعوم. يُرجى المتابعة بحذر.</string>
-    <string name="if_preferences">إعدادات IronFox</string>
+    <string name="if_preferences">إعدادات Straighter</string>
     <string name="if_preferences_misc">متنوّع</string>
     <string name="if_preferences_privacy">الخصوصية</string>
     <string name="if_preferences_privacy_security">الأمن والخصوصية</string>
@@ -20,7 +20,7 @@
     <string name="preference_jit_trusted_principals_enabled">تفعيل خاصية التصريف الفوري للغة JavaScript (JIT) للامتدادات</string>
     <string name="preference_jit_trusted_principals_enabled_summary">عند تعطيل JIT، يتم إعادة تفعيل JIT للامتدادات - سيؤدي تغيير هذا الإعداد إلى إعادة تشغيل متصفحك</string>
     <string name="preference_media_autoplay_title">التشغيل التلقائي للوسائط</string>
-    <string name="preference_media_autoplay_description">تحكّم في كيفية قيام IronFox بحظر التشغيل التلقائي للوسائط.</string>
+    <string name="preference_media_autoplay_description">تحكّم في كيفية قيام Straighter بحظر التشغيل التلقائي للوسائط.</string>
     <string name="preference_autoplay_policy_click_to_play">اضغط للتشغيل</string>
     <string name="preference_autoplay_policy_transient">عابر</string>
     <string name="preference_autoplay_policy_sticky">لزج</string>
@@ -45,7 +45,7 @@
     <string name="preference_fpp_overrides_ironfox_webgl_enabled">تفعيل تجاوزات WebGL من IronFox</string>
     <string name="preference_fpp_overrides_ironfox_webgl_summary">عند تعطيل WebGL، يُعاد تفعيله لبعض المواقع لتقليل التعطلّ - سيؤدي تغيير هذا الإعداد إلى إعادة تشغيل متصفحك</string>
     <string name="preference_webrtc_enabled">تفعيل WebRTC</string>
-    <string name="extension_failed_to_install_xpinstall_disabled_error">تثبيت الإضافات مُعطَّل حاليًا. إذا رغبت في تثبيتها، على حساب الأمان، يمكنك تفعيله بالانتقال إلى الإعدادات -&gt; IronFox -&gt; إعدادات IronFox -&gt; الأمان -&gt; السماح بتثبيت الإضافات.</string>
+    <string name="extension_failed_to_install_xpinstall_disabled_error">تثبيت الإضافات مُعطَّل حاليًا. إذا رغبت في تثبيتها، على حساب الأمان، يمكنك تفعيله بالانتقال إلى الإعدادات -&gt; Straighter -&gt; إعدادات Straighter -&gt; الأمان -&gt; السماح بتثبيت الإضافات.</string>
     <string name="preference_xpinstall_enabled">اسمح بتثبيت الإضافات</string>
     <string name="ironfox_onboarding_state_installing_ublock">جارٍ تثبيت uBlock Origin…</string>
     <string name="ironfox_onboarding_state_installing_ublock_error">حدث خطأ أثناء تثبيت (uBlock Origin): %1$s</string>

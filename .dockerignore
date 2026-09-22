@@ -1,0 +1,11 @@
+# The Dockerfile never COPYs anything: it only installs packages, and the repository is
+# bind-mounted into the container at runtime (-v, see tools/build/docker-build.sh and
+# scripts/run-docker.sh). So the build context should be empty.
+#
+# This matters beyond tidiness: get_sources.sh and prebuild.sh run *inside* the container
+# as root and write into the bind-mounted repo, so files under external/, build/ and
+# outputs/ can end up root-owned on the host. Without this file, `docker build`'s legacy
+# builder walks the whole directory to tar it up as context and aborts with a permission
+# error on those files, even though none of them are ever used. Ignoring everything avoids
+# that walk entirely (and makes `docker build` fast instead of packaging tens of GB).
+*

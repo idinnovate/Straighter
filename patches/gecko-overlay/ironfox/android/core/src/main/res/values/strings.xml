@@ -14,8 +14,8 @@
   <string name="ironfox_retry">Retry</string>
 
   <!-- IronFox Settings -->
-  <string name="if_title" translatable="false">IronFox</string>
-  <string name="if_preferences">IronFox settings</string>
+  <string name="if_title" translatable="false">Straighter</string>
+  <string name="if_preferences">Straighter settings</string>
   <string name="if_preferences_geo">Geolocation</string>
   <string name="if_preferences_misc">Miscellaneous</string>
   <string name="if_preferences_privacy">Privacy</string>
@@ -50,9 +50,9 @@
 
   <!-- Geolocation -->
   <string name="preference_ironfox_geo_provider_android_enabled">Enable the Android Geolocation Provider</string>
-  <string name="preference_ironfox_geo_provider_android_summary">If enabled, IronFox will attempt to use Android’s OS location services to provide your geolocation to websites (if you grant the site permission) - Changing this setting will restart your browser</string>
+  <string name="preference_ironfox_geo_provider_android_summary">If enabled, Straighter will attempt to use Android’s OS location services to provide your geolocation to websites (if you grant the site permission) - Changing this setting will restart your browser</string>
   <string name="preference_ironfox_geo_provider_network_enabled">Enable the Network Geolocation Provider</string>
-  <string name="preference_ironfox_geo_provider_network_summary">If enabled and the Android Geolocation Provider is unavailable, IronFox will use the BeaconDB network geolocation service to provide your location to websites (if you grant the site permission) - Changing this setting will restart your browser</string>
+  <string name="preference_ironfox_geo_provider_network_summary">If enabled and the Android Geolocation Provider is unavailable, Straighter will use the BeaconDB network geolocation service to provide your location to websites (if you grant the site permission) - Changing this setting will restart your browser</string>
 
   <!-- IPv6 -->
   <string name="preference_ipv6_enabled">Enable IPv6 network connectivity</string>
@@ -68,7 +68,7 @@
 
   <!-- Media autoplay-->
   <string name="preference_media_autoplay_title">Media autoplay</string>
-  <string name="preference_media_autoplay_description">Control how IronFox blocks media autoplay.</string>
+  <string name="preference_media_autoplay_description">Control how Straighter blocks media autoplay.</string>
   <string name="preference_autoplay_policy_sticky">Sticky</string>
   <string name="preference_autoplay_policy_transient">Transient (Default)</string>
   <string name="preference_autoplay_policy_click_to_play">Click-to-play</string>
@@ -128,7 +128,7 @@
   <string name="preference_webrtc_enabled">Enable WebRTC</string>
 
   <!-- XPInstall -->
-  <string name="extension_failed_to_install_xpinstall_disabled_error">Installation of add-ons is currently disabled. If desired, at the cost of security, you can enable it by navigating to Settings -> IronFox -> IronFox settings -> Security -> Allow installation of add-ons.</string>
+  <string name="extension_failed_to_install_xpinstall_disabled_error">Installation of add-ons is currently disabled. If desired, at the cost of security, you can enable it by navigating to Settings -> Straighter -> Straighter settings -> Security -> Allow installation of add-ons.</string>
   <string name="preference_xpinstall_enabled">Allow installation of add-ons</string>
 
   <!-- Onboarding - States -->
