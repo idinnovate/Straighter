@@ -792,8 +792,12 @@ function prepare_firefox() {
   # Always use our Gradle wrapper with our Gradle flags/configuration
   localize_gradle
 
-  # Let it be IronFox (part 2...)
-  "${IRONFOX_SED}" -i -e 's|"MOZ_APP_VENDOR", ".*"|"MOZ_APP_VENDOR", "IronFox OSS"|g' "${IRONFOX_GECKO}/mobile/android/moz.configure"
+  # Let it be Straighter (part 2...)
+  # Must match MOZ_APP_VENDOR in configs/mozconfigs/branding/common.mozconfig and
+  # patches/gecko-overlay/ironfox/ironfox.configure, or configure aborts with
+  # ConflictingOptionError (mach's configure refuses two different imply_option values
+  # for the same variable).
+  "${IRONFOX_SED}" -i -e 's|"MOZ_APP_VENDOR", ".*"|"MOZ_APP_VENDOR", "Straighter"|g' "${IRONFOX_GECKO}/mobile/android/moz.configure"
 
   # Replace instances of "Firefox" with "IronFox" or "IronFox Nightly"
   "${IRONFOX_SED}" -i -e 's/Firefox/{IRONFOX_NAME}/' "${IRONFOX_GECKO}/toolkit/content/neterror/supportpages/connection-not-secure.html"
