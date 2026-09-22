@@ -508,9 +508,12 @@ if [[ -z "${IRONFOX_NAME+x}" ]]; then
   echo_red_text 'Aborting...'
   exit 1
 fi
-if [[ "${IRONFOX_NAME}" != 'IronFox' ]] && [[ "${IRONFOX_NAME}" != 'IronFox Nightly' ]]; then
+# Straighter: also accept our own brand name (set in scripts/env_common.sh), alongside
+# upstream's, so this sanity check still catches a genuine typo/misconfiguration.
+if [[ "${IRONFOX_NAME}" != 'IronFox' ]] && [[ "${IRONFOX_NAME}" != 'IronFox Nightly' ]] &&
+  [[ "${IRONFOX_NAME}" != 'Straighter' ]] && [[ "${IRONFOX_NAME}" != 'Straighter Nightly' ]]; then
   echo_red_text "ERROR: IRONFOX_NAME (${IRONFOX_NAME}) is invalid!"
-  echo "Please ensure that IRONFOX_NAME is set to 'IronFox' or 'IronFox Nightly'."
+  echo "Please ensure that IRONFOX_NAME is set to 'IronFox', 'IronFox Nightly', 'Straighter' or 'Straighter Nightly'."
   echo_red_text 'Aborting...'
   exit 1
 fi
